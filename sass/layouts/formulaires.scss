@@ -1,0 +1,43 @@
+.recherche{
+    width: 100%;
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    height: 337px;
+    background-color: rgb(245, 245, 245);
+    &--zone{ 
+        text-align: center;
+        height: 50px;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        background-color: rgb(231, 231, 231);
+        font-size: 0.95rem;
+        font-weight: 600;
+        box-shadow: inset 0px 2px 3px rgb(180, 179, 179);
+        color: black;
+        &:focus{
+            background-color: #FF79DA; /* pas opti */
+        }
+    }
+    &__fa{
+        position: relative;
+        bottom: 36px;
+        left: -70px;
+    }
+    &__titre{
+        margin: 0 15%;
+        margin-top: 20px;
+    }
+    &__texte{
+        margin: 10px 10% 0 10%;
+        font-size: 1.05rem;
+        font-weight: 300;
+    }
+} 
+
+
+
+
+
