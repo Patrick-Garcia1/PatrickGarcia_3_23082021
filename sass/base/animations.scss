@@ -1,3 +1,4 @@
+/* animation bouton fleche retour page accueil header */
 @keyframes strillé {
     0% {
       /*transform: scaleX(0);*/
@@ -8,12 +9,16 @@
       background-size: 100% 100%;
     }
 }
+
+/* animation bouton moteur de recherche header */
 @keyframes mou{
     10%{transform: scale3d(0.93, 0.93, 1);}
     40%{transform: scale3d(1, 1, 1);}
     80%{transform: scale3d(0.97, 0.97, 1);}
     100%{transform: scale3d(0.98, 0.98, 1);}  
 }
+
+/* animation activation bouton moteur de recherche */
 @keyframes fleche-tension{
     0%{transform: rotate(5deg)}
     5%{transform: rotate(-5deg)}
@@ -46,4 +51,27 @@
     85%{transform: translateY(-4vh) translateX(15vw) rotateZ(1735deg);}
     90%{transform: translateY(-2vh) translateX(46vw) rotateZ(1740deg);}
     100%{transform: translateY(-2vh) translateX(46vw) rotateZ(1740deg);}
+}
+
+/* animation fonctionnement */
+@keyframes demi-mou{
+    0%{transform: scale3d(0.97, 0.97, 1);}
+    20%{transform: scale3d(1.02, 1.02, 1);}
+    40%{transform: scale3d(0.98, 0.98, 1);}
+    60%{transform: scale3d(1, 1, 1);}
+    80%{transform: scale3d(0.99, 0.99, 1);}
+    100%{transform: scale3d(1, 1, 1);}
+}
+@keyframes tourne{
+    0%{transform: rotate(0deg);}
+    10%{transform: rotate(-90deg);}
+    20%{transform: rotate(-40deg);}
+    30%{transform: rotate(180deg);}
+    40%{transform: rotate(360deg);}
+    50%{transform: rotate(540deg);}
+    60%{transform: rotate(720deg);}
+    70%{transform: rotate(780deg);}
+    80%{transform: rotate(690deg);}
+    90%{transform: rotate(730deg);}
+    100%{transform: rotate(720deg);}
 }

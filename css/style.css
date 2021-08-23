@@ -3,11 +3,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* header */
 .tête__titre {
   font-family: "Shrikhand", cursive;
 }
 
-input::placeholder {
+/* fonctionnement */
+.bouton {
   font-family: "Roboto", sans-serif;
 }
 
@@ -18,6 +20,7 @@ body {
   background-color: white;
 }
 
+/* animation bouton fleche retour page accueil header */
 @keyframes strillé {
   0% {
     /*transform: scaleX(0);*/
@@ -28,6 +31,7 @@ body {
     background-size: 100% 100%;
   }
 }
+/* animation bouton moteur de recherche header */
 @keyframes mou {
   10% {
     transform: scale3d(0.93, 0.93, 1);
@@ -42,6 +46,7 @@ body {
     transform: scale3d(0.98, 0.98, 1);
   }
 }
+/* animation activation bouton moteur de recherche */
 @keyframes fleche-tension {
   0% {
     transform: rotate(5deg);
@@ -133,6 +138,63 @@ body {
     transform: translateY(-2vh) translateX(46vw) rotateZ(1740deg);
   }
 }
+/* animation fonctionnement */
+@keyframes demi-mou {
+  0% {
+    transform: scale3d(0.97, 0.97, 1);
+  }
+  20% {
+    transform: scale3d(1.02, 1.02, 1);
+  }
+  40% {
+    transform: scale3d(0.98, 0.98, 1);
+  }
+  60% {
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(0.99, 0.99, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes tourne {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-90deg);
+  }
+  20% {
+    transform: rotate(-40deg);
+  }
+  30% {
+    transform: rotate(180deg);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(540deg);
+  }
+  60% {
+    transform: rotate(720deg);
+  }
+  70% {
+    transform: rotate(780deg);
+  }
+  80% {
+    transform: rotate(690deg);
+  }
+  90% {
+    transform: rotate(730deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+/* bouton moteur de recherche avec activation animation */
 .recherche--bouton {
   display: block;
   margin: 35px auto;
@@ -231,6 +293,7 @@ body {
   transition: all 0.3s;
 }
 
+/* moteur de recherche */
 .recherche {
   width: 100%;
   position: relative;
@@ -269,6 +332,97 @@ body {
   margin: 10px 10% 0 10%;
   font-size: 1.05rem;
   font-weight: 300;
+}
+
+/* fonctionnement */
+.fonctionnement {
+  height: 440px;
+}
+.fonctionnement__titre {
+  text-indent: 6%;
+  margin: 0;
+  padding: 48px 0 18px 0;
+  font-size: 1.5rem;
+}
+.fonctionnement__navigation {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.bouton {
+  width: 87vw;
+  height: 75px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.5);
+  position: relative;
+  text-align: start;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #f7f7f7;
+}
+.bouton:hover {
+  animation: demi-mou 1s ease-in 0.05s 1 forwards;
+  cursor: pointer;
+}
+.bouton--numero {
+  position: absolute;
+  left: -10px;
+  top: 26px;
+  background-color: #9356DC;
+  border: 1px solid #9356DC;
+  border-radius: 22px;
+  padding: 3px 8.5px 2px 6.5px;
+  color: white;
+}
+.bouton:hover .bouton--numero {
+  animation: tourne 1.5s linear forwards;
+}
+.bouton--noir {
+  width: 14px;
+  margin-right: 15vw;
+  text-indent: 11vw;
+  position: relative;
+  font-size: 1rem;
+  color: grey;
+}
+.bouton:hover .bouton--noir {
+  opacity: 0;
+}
+.bouton--violet {
+  color: #9356DC;
+  position: absolute;
+  bottom: 29px;
+  left: 0px;
+  width: 14px;
+  margin-right: 15vw;
+  text-indent: 11vw;
+  font-size: 1rem;
+  z-index: -1;
+}
+.bouton--tel {
+  font-size: 1.1rem;
+}
+.bouton:hover .bouton--violet {
+  z-index: 1;
+}
+.bouton--calque {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #9356DC;
+  box-shadow: 0px 5px 10px 0px #000;
+  border-radius: 20px;
+  opacity: 0;
+  z-index: -1;
+}
+.bouton:hover .bouton--calque {
+  z-index: 1;
+  opacity: 0.1;
 }
 
 /*# sourceMappingURL=style.css.map */
