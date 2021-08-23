@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.tête__titre {
+  font-family: "Shrikhand", cursive;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes strillé {
+  0% {
+    /*transform: scaleX(0);*/
+    background-size: 0% 100%;
+  }
+  100% {
+    /*transform: scaleX(1);*/
+    background-size: 100% 100%;
+  }
+}
+.tête {
+  position: relative;
+  height: 62px;
+}
+.tête__titre {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding: 11px 0;
+  margin: 0;
+}
+.tête__flèche {
+  color: black;
+  text-decoration: none;
+  width: 18.2px;
+  height: 20.8px;
+  position: absolute;
+  top: 21px;
+  left: 8vw;
+}
+.tête__flèche:visited {
+  color: black;
+}
+.tête__flèche--vide {
+  position: absolute;
+  font-size: 1.3rem;
+  width: 18.2px;
+  height: 20.8px;
+}
+.tête__flèche--plein {
+  position: absolute;
+  font-size: 1.3rem;
+  width: 18.2px;
+  height: 20.8px;
+  background: linear-gradient(90deg, #FF79DA 40%, #9356DC 75%);
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  background-position: left;
+  /* pour version bg-size */
+  transform-origin: 100% 50%;
+  /* pour version scale */
+}
+.tête__flèche:hover .tête__flèche--plein {
+  opacity: 1;
+  animation: strillé 0.3s linear;
+}
+.tête__flèche:hover .tête__flèche--vide {
+  opacity: 0;
+  transform: translateX(-25px);
+  transition: all 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */
