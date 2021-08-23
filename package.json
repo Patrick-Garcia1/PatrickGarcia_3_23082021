@@ -1,0 +1,21 @@
+{
+  "name": "p3_garcia_patrick",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/index.scss:.css/index.css --style nested",
+    "prefix": "postcss .css/index.css --use autoprefixer -d .css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrick-Garcia1/PatrickGarcia_3_23082021.git"
+  },
+  "author": "Patrick Garcia",
+  "license": "ISC",
+  "browserslist": "last 1 versions",
+  "bugs": {
+    "url": "https://github.com/Patrick-Garcia1/PatrickGarcia_3_23082021/issues"
+  },
+  "homepage": "https://github.com/Patrick-Garcia1/PatrickGarcia_3_23082021#README.md"
+}
