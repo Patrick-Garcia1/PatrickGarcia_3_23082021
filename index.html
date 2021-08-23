@@ -12,10 +12,26 @@
     </head>
 
     <body>    
-        
+
         <!-- tête de page -->
         <header class='tête'>
             <h1 class='tête__titre'>ohmyfood</h1>
         </header>
+
+        <!-- moteur de recherche -->
+        <form class='recherche'>  
+            
+            <!-- zone de recherche -->
+            <input type='search' class='fa recherhe--zone' placeholder="&#xf3c5; Paris, Belleville" id='ville' name='ville'>
+            <label for='ville'></label>
+
+            <!-- titre + texte -->
+            <h1 class='recherche__titre'>Réservez le menu qui vous convient</h1>
+            <p class='recherche__texte'>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+
+            <!-- bouton de recherche-->
+            <input type='button' class='recherche--bouton' value="Explorer nos restaurants">
+            <span class='recherche__archer'><i class="fas fa-map-marker-alt recherche__archer--fleche"></i></span>
+        </form>
 
     </body>
