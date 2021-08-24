@@ -15,7 +15,7 @@
         height: 20.8px;
         position:absolute;
         top: 21px;
-        left: 8vw; 
+        left: 8%; 
         &:visited{
             color: black;
         } 
@@ -24,6 +24,11 @@
             font-size: 1.3rem;
             width: 18.2px;
             height: 20.8px;  
+        }
+        &:hover .tête__flèche--vide{
+            opacity: 0;
+            transform: translateX(-25px);
+            transition: all 0.3s;
         }
         &--plein{
             position:absolute;
@@ -42,11 +47,6 @@
         &:hover .tête__flèche--plein {
             opacity: 1;
             animation: strillé 0.3s linear;
-        }
-        &:hover .tête__flèche--vide{
-            opacity: 0;
-            transform: translateX(-25px);
-            transition: all 0.3s;
         }
     }
 }

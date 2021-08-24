@@ -20,6 +20,11 @@ body {
   background-color: white;
   height: 2262px;
 }
+@media (min-width: 1024px) {
+  body {
+    height: 1580px;
+  }
+}
 
 /* animation bouton fleche retour page accueil header */
 @keyframes strillé {
@@ -341,13 +346,13 @@ body {
   /* lighten */
   animation: mou 0.6s ease-in-out 0.05s 1 forwards;
 }
-.recherche--bouton:focus + .recherche__archer .recherche__archer--fleche {
-  transform-origin: bottom;
-  animation: fleche-tension 0.5s linear 1.35s 1 forwards;
-}
 .recherche--bouton:focus + .recherche__archer {
   z-index: 1;
   animation: fleche 1.5s linear 0s 1 forwards;
+}
+.recherche--bouton:focus + .recherche__archer .recherche__archer--fleche {
+  transform-origin: bottom;
+  animation: fleche-tension 0.5s linear 1.35s 1 forwards;
 }
 .recherche__archer {
   position: absolute;
@@ -380,7 +385,7 @@ body {
   height: 20.8px;
   position: absolute;
   top: 21px;
-  left: 8vw;
+  left: 8%;
 }
 .tête__flèche:visited {
   color: black;
@@ -390,6 +395,11 @@ body {
   font-size: 1.3rem;
   width: 18.2px;
   height: 20.8px;
+}
+.tête__flèche:hover .tête__flèche--vide {
+  opacity: 0;
+  transform: translateX(-25px);
+  transition: all 0.3s;
 }
 .tête__flèche--plein {
   position: absolute;
@@ -410,11 +420,6 @@ body {
 .tête__flèche:hover .tête__flèche--plein {
   opacity: 1;
   animation: strillé 0.3s linear;
-}
-.tête__flèche:hover .tête__flèche--vide {
-  opacity: 0;
-  transform: translateX(-25px);
-  transition: all 0.3s;
 }
 
 .pied {
@@ -438,10 +443,22 @@ body {
   padding: 0;
   max-width: 300px;
 }
+@media (min-width: 1024px) {
+  .pied__liste {
+    max-width: unset;
+    margin: 20px 0 0 0%;
+  }
+}
 .pied__liste--element {
   list-style-type: none;
   padding: 0;
   margin: 0 25% 0 0;
+}
+@media (min-width: 1024px) {
+  .pied__liste--element {
+    margin: 0 1% 0 6%;
+    width: 18%;
+  }
 }
 .pied__liste--element:hover {
   transform-origin: 50%;
@@ -550,6 +567,11 @@ body {
 .fonctionnement {
   height: 440px;
 }
+@media (min-width: 1024px) {
+  .fonctionnement {
+    height: 280px;
+  }
+}
 .fonctionnement__titre {
   text-indent: 6%;
   margin: 0;
@@ -562,7 +584,7 @@ body {
 }
 
 .bouton {
-  width: 87vw;
+  width: 87%;
   height: 75px;
   margin: 10px auto;
   border: none;
@@ -574,6 +596,11 @@ body {
   font-size: 1rem;
   font-weight: 500;
   background-color: #f7f7f7;
+}
+@media (min-width: 1024px) {
+  .bouton {
+    width: 25%;
+  }
 }
 .bouton:hover {
   animation: demi-mou 1s ease-in 0.05s 1 forwards;
@@ -594,8 +621,8 @@ body {
 }
 .bouton--noir {
   width: 14px;
-  margin-right: 15vw;
-  text-indent: 11vw;
+  margin: 0 7% 0 11%;
+  text-indent: 11%;
   position: relative;
   font-size: 1rem;
   color: grey;
@@ -609,16 +636,16 @@ body {
   bottom: 30px;
   left: 0px;
   width: 14px;
-  margin-right: 15vw;
-  text-indent: 11vw;
+  margin: 0 7% 0 11%;
+  text-indent: 11%;
   font-size: 1rem;
   z-index: -1;
 }
-.bouton--tel {
-  font-size: 1.1rem;
-}
 .bouton:hover .bouton--violet {
   z-index: 1;
+}
+.bouton--tel {
+  font-size: 1.1rem;
 }
 .bouton--calque {
   position: absolute;
@@ -642,6 +669,11 @@ body {
   background-color: whitesmoke;
   height: 1220px;
 }
+@media (min-width: 1024px) {
+  .restaurants {
+    height: 700px;
+  }
+}
 .restaurants__titre {
   position: relative;
   margin: 0;
@@ -655,15 +687,26 @@ body {
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
+@media (min-width: 1024px) {
+  .restaurants__navigation {
+    height: 550px;
+  }
+}
 
 .carte {
   display: inline;
   height: 250px;
+  width: 87%;
   position: relative;
   color: black;
   background: white;
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.5);
+}
+@media (min-width: 1024px) {
+  .carte {
+    width: 45%;
+  }
 }
 .carte:hover {
   animation: coup 2s ease-in 0.05s forwards;
@@ -694,7 +737,7 @@ body {
 }
 .carte__lien__image {
   height: 175px;
-  width: 90vw;
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
