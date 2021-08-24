@@ -194,6 +194,111 @@ body {
     transform: rotate(720deg);
   }
 }
+/* animation navigation restaurants */
+@keyframes coup {
+  10% {
+    transform: scale3d(0.975, 0.975, 1);
+  }
+  40% {
+    transform: scale3d(0.975, 0.975, 1);
+  }
+  100% {
+    transform: scale3d(0.99, 0.99, 1);
+  }
+}
+@keyframes tombe {
+  5% {
+    transform: rotateZ(40deg);
+  }
+  10% {
+    transform: rotateZ(110deg);
+  }
+  15% {
+    transform: rotateZ(85deg);
+  }
+  20% {
+    transform: rotateZ(92.5deg);
+  }
+  30% {
+    transform: rotateZ(90deg);
+  }
+  40% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(75deg);
+  }
+  60% {
+    transform: rotateZ(60deg);
+  }
+  70% {
+    transform: rotateZ(45deg);
+  }
+  80% {
+    transform: rotateZ(30deg);
+  }
+  90% {
+    transform: rotateZ(15deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes efface {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes grandi-bat {
+  0% {
+    transform: scale3d(0, 0, 1);
+  }
+  33% {
+    transform: scale3d(1, 1, 1);
+  }
+  38% {
+    transform: scale3d(1, 1, 1);
+  }
+  43% {
+    transform: scale3d(1, 1, 1);
+  }
+  48% {
+    transform: scale3d(1, 1, 1);
+  }
+  53% {
+    transform: scale3d(1.4, 1.4, 1);
+  }
+  58% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  63% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  68% {
+    transform: scale3d(1, 1, 1);
+  }
+  73% {
+    transform: scale3d(1, 1, 1);
+  }
+  78% {
+    transform: scale3d(1, 1, 1);
+  }
+  83% {
+    transform: scale3d(1.4, 1.4, 1);
+  }
+  88% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  95% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 /* bouton moteur de recherche avec activation animation */
 .recherche--bouton {
   display: block;
@@ -291,6 +396,41 @@ body {
   opacity: 0;
   transform: translateX(-25px);
   transition: all 0.3s;
+}
+
+/* bloc bem coeur réutisilé */
+.coeur {
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+  height: 24px;
+  width: 24px;
+}
+.coeur:hover {
+  cursor: grab;
+}
+.coeur--vide {
+  font-size: 1.48rem;
+  padding: 1px 0px 0px 0.3px;
+}
+.coeur__filtre {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 40px;
+  height: 40px;
+}
+.coeur__filtre--plein {
+  font-size: 1.5rem;
+  padding: 8px;
+  position: absolute;
+  color: transparent;
+  opacity: 0;
+  transform-origin: 50% 50%;
+  transform: scale(0);
+  background: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* moteur de recherche */
@@ -394,7 +534,7 @@ body {
 .bouton--violet {
   color: #9356DC;
   position: absolute;
-  bottom: 29px;
+  bottom: 30px;
   left: 0px;
   width: 14px;
   margin-right: 15vw;
@@ -423,6 +563,100 @@ body {
 .bouton:hover .bouton--calque {
   z-index: 1;
   opacity: 0.1;
+}
+
+/* navigation restaurants */
+.restaurants {
+  background-color: whitesmoke;
+  height: 1220px;
+}
+.restaurants__titre {
+  position: relative;
+  margin: 0;
+  text-indent: 6%;
+  font-size: 1.5rem;
+  padding: 55px 0 20px 0;
+}
+.restaurants__navigation {
+  height: 1070px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.carte {
+  display: inline;
+  height: 250px;
+  position: relative;
+  color: black;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.5);
+}
+.carte:hover {
+  animation: coup 2s ease-in 0.05s forwards;
+}
+.carte__lien {
+  text-decoration: none;
+  background: white;
+}
+.carte__lien:link {
+  color: black;
+}
+.carte__lien:visited {
+  color: black;
+}
+.carte__lien--nouveau {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-color: #99E2D0;
+  width: 80px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 0;
+  border-radius: 2px;
+  color: #138d75;
+  transform-origin: 10% 50%;
+}
+.carte__lien__image {
+  height: 175px;
+  width: 90vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.carte__lien__titre {
+  margin: 0;
+  padding: 13px 0 0 0;
+  font-size: 1.05rem;
+  text-indent: 4%;
+}
+.carte__lien__texte {
+  margin: 0;
+  padding: 5px 0 0 0;
+  text-indent: 4%;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+.carte__lien--selection {
+  display: none;
+}
+.carte__lien--selection:checked + .coeur .coeur--vide {
+  animation: efface 0.5s linear forwards;
+}
+.carte__lien--selection:hover + .coeur .coeur__filtre--plein {
+  opacity: 1;
+}
+.carte__lien--selection:checked + .coeur .coeur__filtre--plein {
+  animation: grandi-bat 1.8s linear forwards;
+  opacity: 1;
+  z-index: 1;
+}
+.carte:hover .carte__lien--nouveau {
+  z-index: 1;
+  animation: tombe 2s linear 0.05s;
 }
 
 /*# sourceMappingURL=style.css.map */
