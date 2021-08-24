@@ -20,7 +20,7 @@ body {
   background-color: white;
   height: 2262px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   body {
     height: 1580px;
   }
@@ -53,6 +53,370 @@ body {
   }
 }
 /* animation activation bouton moteur de recherche */
+@keyframes fleche {
+  5% {
+    transform: translateY(0) translateX(0) rotateZ(0);
+  }
+  10% {
+    transform: translateY(0) translateX(0) rotateZ(-65deg);
+  }
+  15% {
+    transform: translateY(0) translateX(0) rotateZ(-90deg);
+  }
+  20% {
+    transform: translateY(0) translateX(0) rotateZ(90deg);
+  }
+  25% {
+    transform: translateY(-1vh) translateX(-3vw) rotateZ(450deg);
+  }
+  30% {
+    transform: translateY(-2vh) translateX(-7.75vw) rotateZ(810deg);
+  }
+  35% {
+    transform: translateY(-3vh) translateX(-12.5vw) rotateZ(1170deg);
+  }
+  40% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1530deg);
+  }
+  45% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1800deg);
+  }
+  50% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+  }
+  55% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1705deg);
+  }
+  60% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+  }
+  65% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1750deg);
+  }
+  70% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+  }
+  75% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1725deg);
+  }
+  80% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1730deg);
+  }
+  85% {
+    transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+  }
+  90% {
+    transform: translateY(-2vh) translateX(10vw) rotateZ(1740deg);
+  }
+  100% {
+    transform: translateY(-2vh) translateX(10vw) rotateZ(1740deg);
+  }
+}
+@media screen and (min-width: 281px) and (max-width: 375px) {
+  @keyframes fleche {
+    5% {
+      transform: translateY(0) translateX(0) rotateZ(0);
+    }
+    10% {
+      transform: translateY(0) translateX(0) rotateZ(-65deg);
+    }
+    15% {
+      transform: translateY(0) translateX(0) rotateZ(-90deg);
+    }
+    20% {
+      transform: translateY(0) translateX(0) rotateZ(90deg);
+    }
+    25% {
+      transform: translateY(-1vh) translateX(-3vw) rotateZ(450deg);
+    }
+    30% {
+      transform: translateY(-2vh) translateX(-7.75vw) rotateZ(810deg);
+    }
+    35% {
+      transform: translateY(-3vh) translateX(-12.5vw) rotateZ(1170deg);
+    }
+    40% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1530deg);
+    }
+    45% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1800deg);
+    }
+    50% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    55% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1705deg);
+    }
+    60% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    65% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1750deg);
+    }
+    70% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    75% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1725deg);
+    }
+    80% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1730deg);
+    }
+    85% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    90% {
+      transform: translateY(-2vh) translateX(15vw) rotateZ(1740deg);
+    }
+    100% {
+      transform: translateY(-2vh) translateX(15vw) rotateZ(1740deg);
+    }
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 600px) {
+  @keyframes fleche {
+    5% {
+      transform: translateY(0) translateX(0) rotateZ(0);
+    }
+    10% {
+      transform: translateY(0) translateX(0) rotateZ(-65deg);
+    }
+    15% {
+      transform: translateY(0) translateX(0) rotateZ(-90deg);
+    }
+    20% {
+      transform: translateY(0) translateX(0) rotateZ(90deg);
+    }
+    25% {
+      transform: translateY(-1vh) translateX(-3vw) rotateZ(450deg);
+    }
+    30% {
+      transform: translateY(-2vh) translateX(-7.75vw) rotateZ(810deg);
+    }
+    35% {
+      transform: translateY(-3vh) translateX(-12.5vw) rotateZ(1170deg);
+    }
+    40% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1530deg);
+    }
+    45% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1800deg);
+    }
+    50% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    55% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1705deg);
+    }
+    60% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    65% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1750deg);
+    }
+    70% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    75% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1725deg);
+    }
+    80% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1730deg);
+    }
+    85% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    90% {
+      transform: translateY(-2vh) translateX(18vw) rotateZ(1740deg);
+    }
+    100% {
+      transform: translateY(-2vh) translateX(18vw) rotateZ(1740deg);
+    }
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 899px) {
+  @keyframes fleche {
+    5% {
+      transform: translateY(0) translateX(0) rotateZ(0);
+    }
+    10% {
+      transform: translateY(0) translateX(0) rotateZ(-65deg);
+    }
+    15% {
+      transform: translateY(0) translateX(0) rotateZ(-90deg);
+    }
+    20% {
+      transform: translateY(0) translateX(0) rotateZ(90deg);
+    }
+    25% {
+      transform: translateY(-1vh) translateX(-3vw) rotateZ(450deg);
+    }
+    30% {
+      transform: translateY(-2vh) translateX(-7.75vw) rotateZ(810deg);
+    }
+    35% {
+      transform: translateY(-3vh) translateX(-12.5vw) rotateZ(1170deg);
+    }
+    40% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1530deg);
+    }
+    45% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1800deg);
+    }
+    50% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    55% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1705deg);
+    }
+    60% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    65% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1750deg);
+    }
+    70% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    75% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1725deg);
+    }
+    80% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1730deg);
+    }
+    85% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    90% {
+      transform: translateY(-2vh) translateX(21vw) rotateZ(1740deg);
+    }
+    100% {
+      transform: translateY(-2vh) translateX(21vw) rotateZ(1740deg);
+    }
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  @keyframes fleche {
+    5% {
+      transform: translateY(0) translateX(0) rotateZ(0);
+    }
+    10% {
+      transform: translateY(0) translateX(0) rotateZ(-65deg);
+    }
+    15% {
+      transform: translateY(0) translateX(0) rotateZ(-90deg);
+    }
+    20% {
+      transform: translateY(0) translateX(0) rotateZ(90deg);
+    }
+    25% {
+      transform: translateY(-1vh) translateX(-3vw) rotateZ(450deg);
+    }
+    30% {
+      transform: translateY(-2vh) translateX(-7.75vw) rotateZ(810deg);
+    }
+    35% {
+      transform: translateY(-3vh) translateX(-12.5vw) rotateZ(1170deg);
+    }
+    40% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1530deg);
+    }
+    45% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1800deg);
+    }
+    50% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    55% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1705deg);
+    }
+    60% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    65% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1750deg);
+    }
+    70% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    75% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1725deg);
+    }
+    80% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1730deg);
+    }
+    85% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    90% {
+      transform: translateY(-2vh) translateX(23vw) rotateZ(1740deg);
+    }
+    100% {
+      transform: translateY(-2vh) translateX(23vw) rotateZ(1740deg);
+    }
+  }
+}
+@media screen and (min-width: 1201px) {
+  @keyframes fleche {
+    5% {
+      transform: translateY(0) translateX(0) rotateZ(0);
+    }
+    10% {
+      transform: translateY(0) translateX(0) rotateZ(-65deg);
+    }
+    15% {
+      transform: translateY(0) translateX(0) rotateZ(-90deg);
+    }
+    20% {
+      transform: translateY(0) translateX(0) rotateZ(90deg);
+    }
+    25% {
+      transform: translateY(-1vh) translateX(-3vw) rotateZ(450deg);
+    }
+    30% {
+      transform: translateY(-2vh) translateX(-7.75vw) rotateZ(810deg);
+    }
+    35% {
+      transform: translateY(-3vh) translateX(-12.5vw) rotateZ(1170deg);
+    }
+    40% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1530deg);
+    }
+    45% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1800deg);
+    }
+    50% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    55% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1705deg);
+    }
+    60% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1740deg);
+    }
+    65% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1750deg);
+    }
+    70% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    75% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1725deg);
+    }
+    80% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1730deg);
+    }
+    85% {
+      transform: translateY(-4vh) translateX(-15vw) rotateZ(1735deg);
+    }
+    90% {
+      transform: translateY(-2vh) translateX(24vw) rotateZ(1740deg);
+    }
+    100% {
+      transform: translateY(-2vh) translateX(24vw) rotateZ(1740deg);
+    }
+  }
+}
 @keyframes fleche-tension {
   0% {
     transform: rotate(5deg);
@@ -83,65 +447,6 @@ body {
   }
   100% {
     transform: rotate(-20deg);
-  }
-}
-@keyframes fleche {
-  5% {
-    transform: translateY(0) translateX(0) rotateZ(0);
-  }
-  10% {
-    transform: translateY(0) translateX(0) rotateZ(-65deg);
-  }
-  15% {
-    transform: translateY(0) translateX(0) rotateZ(-90deg);
-  }
-  20% {
-    transform: translateY(0) translateX(0) rotateZ(90deg);
-  }
-  25% {
-    transform: translateY(-1vh) translateX(3vw) rotateZ(450deg);
-  }
-  30% {
-    transform: translateY(-2vh) translateX(7.75vw) rotateZ(810deg);
-  }
-  35% {
-    transform: translateY(-3vh) translateX(12.5vw) rotateZ(1170deg);
-  }
-  40% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1530deg);
-  }
-  45% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1800deg);
-  }
-  50% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1740deg);
-  }
-  55% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1705deg);
-  }
-  60% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1740deg);
-  }
-  65% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1750deg);
-  }
-  70% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1735deg);
-  }
-  75% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1725deg);
-  }
-  80% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1730deg);
-  }
-  85% {
-    transform: translateY(-4vh) translateX(15vw) rotateZ(1735deg);
-  }
-  90% {
-    transform: translateY(-2vh) translateX(46vw) rotateZ(1740deg);
-  }
-  100% {
-    transform: translateY(-2vh) translateX(46vw) rotateZ(1740deg);
   }
 }
 /* animation fonctionnement */
@@ -347,7 +652,6 @@ body {
   animation: mou 0.6s ease-in-out 0.05s 1 forwards;
 }
 .recherche--bouton:focus + .recherche__archer {
-  z-index: 1;
   animation: fleche 1.5s linear 0s 1 forwards;
 }
 .recherche--bouton:focus + .recherche__archer .recherche__archer--fleche {
@@ -356,15 +660,14 @@ body {
 }
 .recherche__archer {
   position: absolute;
-  left: 5px;
-  top: 10px;
+  left: 22vw;
+  top: 15px;
   width: 24px;
   /*  largeur pour la fin d'animation fleche-tension, que i ne sorte pas de sa boite */
-  font-size: 1.2rem;
-  z-index: -1;
+  font-size: 1rem;
 }
 .recherche__archer--fleche {
-  color: #9356DC;
+  color: black;
 }
 
 .tête {
@@ -443,7 +746,7 @@ body {
   padding: 0;
   max-width: 300px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .pied__liste {
     max-width: unset;
     margin: 20px 0 0 0%;
@@ -454,7 +757,7 @@ body {
   padding: 0;
   margin: 0 25% 0 0;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .pied__liste--element {
     margin: 0 1% 0 6%;
     width: 18%;
@@ -548,10 +851,8 @@ body {
   background-color: #FF79DA;
   /* pas opti */
 }
-.recherche__fa {
-  position: relative;
-  bottom: 36px;
-  left: -70px;
+.recherche--zone:focus ~ .recherche__archer .recherche__archer--fleche {
+  opacity: 0;
 }
 .recherche__titre {
   margin: 0 15%;
@@ -567,7 +868,7 @@ body {
 .fonctionnement {
   height: 440px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement {
     height: 280px;
   }
@@ -597,7 +898,7 @@ body {
   font-weight: 500;
   background-color: #f7f7f7;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .bouton {
     width: 25%;
   }
@@ -669,7 +970,7 @@ body {
   background-color: whitesmoke;
   height: 1220px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .restaurants {
     height: 700px;
   }
@@ -687,7 +988,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .restaurants__navigation {
     height: 550px;
   }
@@ -703,7 +1004,7 @@ body {
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.5);
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .carte {
     width: 45%;
   }

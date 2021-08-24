@@ -22,11 +22,9 @@
         &:focus{
             background-color: #FF79DA; /* pas opti */
         }
-    }
-    &__fa{
-        position: relative;
-        bottom: 36px;
-        left: -70px;
+        &:focus ~ .recherche__archer .recherche__archer--fleche{
+            opacity: 0;
+        }
     }
     &__titre{
         margin: 0 15%;
@@ -42,7 +40,7 @@
 /* fonctionnement */
 .fonctionnement{
     height: 440px;
-    @media (min-width: 1024px){
+    @media screen and (min-width: 1024px){
         height: 280px;
     }
     &__titre{
@@ -69,7 +67,7 @@
     font-size: 1rem;
     font-weight: 500;
     background-color: rgb(247, 247, 247);  
-    @media (min-width: 1024px){
+    @media screen and (min-width: 1024px){
         width: 25%;
     }
     &:hover{
