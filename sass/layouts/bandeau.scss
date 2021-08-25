@@ -11,13 +11,18 @@
         position: absolute;
         bottom: -46px;
         height: 85px;
-        background-color: white;
+        background-color: rgb(247, 247, 247);
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         &__titre{
             text-indent: 3%;
             margin: 0;
+            font-size: 1.7rem;
+            font-weight: 300;
             padding: 28.5px 0 28.5px 0;
+            @media screen and (max-width: 320px){
+                font-size: 1.4rem;
+            }
         }
         &--selection{
             display: none;

@@ -43,6 +43,7 @@
 /* fonctionnement */
 .fonctionnement{
     height: 440px;
+    background: white;
     @media screen and (min-width: 1024px){
         height: 280px;
     }
@@ -138,8 +139,233 @@
 }
 
 
+/* menu des repas */
+.repas{
+    margin: 25px 0 0 0;
+    padding: 0;
+    background-color: rgb(247, 247, 247);
+    animation: flou 1.2s linear 0s forwards;
+    &__titre{
+        text-transform:uppercase;
+        font-size: 0.95rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 40px 0 0 0;
+        min-width: 80px;
+        width: 22%;
+        max-width: 200px;
+        height: 30px;
+        position: relative;
+        left: 5%;
+        &--barre{
+            display: block;
+            width: 100%;
+            max-width: 120px;
+            height: 2.5px;
+            margin-top: 5px;
+            background-color: #99E2D0;
+            transform-origin: 0% 50%;
+            transform: scaleX(0.5); 
+        }
+        &:hover .repas__titre--barre{
+            animation: détend 0.6s ease-out; 
+        }
+    }
+    &__entrée{
+        display: flex;
+        flex-flow: row wrap;  
+        justify-content: space-around;
+        align-content:space-around;
+        border: none;
+        margin: 0;
+        padding: 5px 0 0 0;
+        min-height: 250px;
+        animation: fondu-arrivée 1.2s linear forwards; 
+        opacity: 0; 
+        &--quatrechoix{
+            height: 320px; 
+        }
+        &--choix{
+            width: 93vw;
+            height: 68px; 
+            display: flex;
+            transform: translateY(10px);
+            &:nth-child(1){  
+                animation: colle 1.6s ease-in-out forwards;
+            }
+            &:nth-child(2){
+                animation: colle 1.6s ease-in-out 0.2s forwards;
+            }
+            &:nth-child(3){
+                animation: colle 1.6s ease-in-out 0.4s forwards;
+            }
+            &:nth-child(4){
+                animation: colle 1.6s ease-in-out 0.6s forwards;
+            }
+        }
+    }
+    &__plat{
+        display: flex;
+        flex-flow: row wrap;  
+        justify-content: space-around;
+        align-content:space-around;
+        border: none;
+        margin: 0;
+        padding: 5px 0 0 0;
+        height: 250px; 
+        animation: fondu-arrivée 1.2s linear forwards; 
+        opacity: 0; 
+        &--choix{
+            width: 93vw;
+            height: 68px; 
+            display: flex;
+            transform: translateY(10px);
+            &:nth-child(1){
+                animation: colle 1.6s ease-in-out forwards;
+            }
+            &:nth-child(2){
+                animation: colle 1.6s ease-in-out 0.2s forwards;
+            }
+            &:nth-child(3){
+                animation: colle 1.6s ease-in-out 0.4s forwards;
+            }
+        }
+    }
+    &__dessert{
+        display: flex;
+        flex-flow: row wrap;  
+        justify-content: space-around;
+        align-content:space-around;
+        border: none;
+        margin: 0;
+        padding: 5px 0 0 0;
+        height: 250px; 
+        animation: fondu-arrivée 1.2s linear forwards; 
+        opacity: 0; 
+        &--choix{
+            width: 93vw;
+            height: 68px; 
+            display: flex;
+            transform: translateY(10px);
+            &:nth-child(1){
+                animation: colle 1.6s ease-in-out forwards;
+            }
+            &:nth-child(2){
+                animation: colle 1.6s ease-in-out 0.2s forwards;
+            }
+            &:nth-child(3){
+                animation: colle 1.6s ease-in-out 0.4s forwards;
+            }
+        }
+    }
+}
 
+/* menu repas selection */
+.selection{
+    display: none;
+    &:checked + .assiette .assiette__prix{
+        transform: translateX(0px);
+    }
+    &:not(:checked) + .assiette:hover .assiette--valide--icone{
+        animation: tour 0.4s linear forwards;
+    }
+    &:checked + .assiette .assiette--valide{
+        transform: scaleX(1); 
+        min-width: 60px;
+        background-color: rgba(153, 226, 208, 1);
+    }
+}
 
+/* menu repas assiette */
+.assiette{
+    display: flex;
+    justify-content:stretch; /* start/center décale la div validé */
+    box-shadow: 0px 3px 10px 0px rgb(221, 221, 221);
+    background-color: white;
+    border-radius: 20px;
+    width: 93vw;
+    height: 68px; 
+    overflow: hidden; 
+    &--un{
+        opacity: 0;
+        animation: flou 0.5s linear 0.8s forwards;
+    }
+    &--deux{
+        opacity: 0;
+        animation: flou 0.5s linear 1s forwards;
+    }
+    &--trois{
+        opacity: 0;
+        animation: flou 0.5s linear 1.2s forwards;
+    }
+    &--quatre{
+        opacity: 0;
+        animation: flou 0.5s linear 1.4s forwards;
+    }
+    &__texte{
+        display: flex;
+        text-indent: 10px;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        min-width: 60%;
+        flex: 1;
+        &__menu{
+            display: block;
+            width: 100%;
+            font-size: 0.9rem;
+            font-weight: 300;
+            width: 100%;
+            margin: -10px 0 0 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;   
+            &:first-of-type{
+                font-size: 1.1rem;
+                font-weight: 500;
+                margin: 12px 0 0 0; 
+                height: 24px;
+            }
+        }
+    }
+    &__prix{
+        height: 32px;
+        width: 45px;
+        padding-left: 0px;
+        margin: 36px 3px 0 3px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+        transition: all 0.4s linear;
+    }
+    &:hover > .assiette__prix{
+        transform: translateX(0px);
+    }
+    &--valide{ 
+        position:relative;
+        left: 1px; /* évite un escalier de l'animation */
+        background-color: rgba(153, 226, 208, 0.7);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display:flex;
+        justify-content: center;
+        width: 0px;
+        min-width: 0px;
+        height: 68px;
+        transform: scaleX(0);
+        transform-origin: 100% 50%;
+        transition: all 0.4s linear;
+        flex: 0;
+        &--icone{
+            font-size: 1.25rem;
+            margin: 24px 0 24px 0;
+            color: white;
+        }
+    }
+    &:hover > .assiette--valide{
+        transform: scaleX(1); 
+        min-width: 60px;
+    }
+}
 
 
 

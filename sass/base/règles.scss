@@ -2,12 +2,5 @@ body{
     box-sizing: border-box;
     padding:0;
     margin:0;  
-    background-color: white;
-    height: 2262px;
-    @media screen and (min-width: 620px){
-        height: 2205px;
-    }
-    @media screen and (min-width: 1024px){
-        height: 1525px;
-    }
+    background-color: rgb(247, 247, 247);
 }

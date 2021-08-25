@@ -13,22 +13,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* bandeau */
+.bandeau__texte__titre {
+  font-family: "Shrikhand", cursive;
+}
+
+/* carte de menu */
+.repas--bouton {
+  font-family: "Roboto", sans-serif;
+}
+
+/* footer */
+.pied__titre {
+  font-family: "Shrikhand", cursive;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: white;
-  height: 2262px;
-}
-@media screen and (min-width: 620px) {
-  body {
-    height: 2205px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    height: 1525px;
-  }
+  background-color: #f7f7f7;
 }
 
 /* animation bouton fleche retour page accueil header */
@@ -615,6 +619,71 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
+/* animation menu miroir restaurants */
+@keyframes fondu-arrivée {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes détend {
+  0% {
+    transform: scaleX(0.5);
+  }
+  20% {
+    transform: scaleX(0.3);
+  }
+  40% {
+    transform: scaleX(0.55);
+  }
+  60% {
+    transform: scaleX(0.42);
+  }
+  80% {
+    transform: scaleX(0.55);
+  }
+  100% {
+    transform: scaleX(0.5);
+  }
+}
+@keyframes colle {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes flou {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tour {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 /* animation footer */
 @keyframes virevolte {
   0% {
@@ -675,13 +744,37 @@ body {
   color: black;
 }
 
+/* bouton formulaire carte du menu */
+.repas--bouton {
+  display: block;
+  margin: 40px auto 70px auto;
+  height: 50px;
+  width: 185px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.5);
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.repas--bouton:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.8);
+  /* darken */
+  opacity: 0.9;
+  /* lighten */
+  animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+}
+
 .tête {
   position: relative;
   height: 62px;
+  background: white;
 }
 .tête__titre {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 400;
   padding: 11px 0;
   margin: 0;
@@ -734,9 +827,9 @@ body {
   color: white;
   background-color: #363636;
   height: 203px;
+  margin-top: 30px;
 }
 .pied__titre {
-  font-family: "Shrikhand", cursive;
   font-size: 1.4rem;
   font-weight: 400;
   text-indent: 7%;
@@ -877,6 +970,7 @@ body {
 /* fonctionnement */
 .fonctionnement {
   height: 440px;
+  background: white;
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement {
@@ -975,10 +1069,240 @@ body {
   opacity: 0.1;
 }
 
+/* menu des repas */
+.repas {
+  margin: 25px 0 0 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  animation: flou 1.2s linear 0s forwards;
+}
+.repas__titre {
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 40px 0 0 0;
+  min-width: 80px;
+  width: 22%;
+  max-width: 200px;
+  height: 30px;
+  position: relative;
+  left: 5%;
+}
+.repas__titre--barre {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  height: 2.5px;
+  margin-top: 5px;
+  background-color: #99E2D0;
+  transform-origin: 0% 50%;
+  transform: scaleX(0.5);
+}
+.repas__titre:hover .repas__titre--barre {
+  animation: détend 0.6s ease-out;
+}
+.repas__entrée {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  min-height: 250px;
+  animation: fondu-arrivée 1.2s linear forwards;
+  opacity: 0;
+}
+.repas__entrée--quatrechoix {
+  height: 320px;
+}
+.repas__entrée--choix {
+  width: 93vw;
+  height: 68px;
+  display: flex;
+  transform: translateY(10px);
+}
+.repas__entrée--choix:nth-child(1) {
+  animation: colle 1.6s ease-in-out forwards;
+}
+.repas__entrée--choix:nth-child(2) {
+  animation: colle 1.6s ease-in-out 0.2s forwards;
+}
+.repas__entrée--choix:nth-child(3) {
+  animation: colle 1.6s ease-in-out 0.4s forwards;
+}
+.repas__entrée--choix:nth-child(4) {
+  animation: colle 1.6s ease-in-out 0.6s forwards;
+}
+.repas__plat {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  height: 250px;
+  animation: fondu-arrivée 1.2s linear forwards;
+  opacity: 0;
+}
+.repas__plat--choix {
+  width: 93vw;
+  height: 68px;
+  display: flex;
+  transform: translateY(10px);
+}
+.repas__plat--choix:nth-child(1) {
+  animation: colle 1.6s ease-in-out forwards;
+}
+.repas__plat--choix:nth-child(2) {
+  animation: colle 1.6s ease-in-out 0.2s forwards;
+}
+.repas__plat--choix:nth-child(3) {
+  animation: colle 1.6s ease-in-out 0.4s forwards;
+}
+.repas__dessert {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  height: 250px;
+  animation: fondu-arrivée 1.2s linear forwards;
+  opacity: 0;
+}
+.repas__dessert--choix {
+  width: 93vw;
+  height: 68px;
+  display: flex;
+  transform: translateY(10px);
+}
+.repas__dessert--choix:nth-child(1) {
+  animation: colle 1.6s ease-in-out forwards;
+}
+.repas__dessert--choix:nth-child(2) {
+  animation: colle 1.6s ease-in-out 0.2s forwards;
+}
+.repas__dessert--choix:nth-child(3) {
+  animation: colle 1.6s ease-in-out 0.4s forwards;
+}
+
+/* menu repas selection */
+.selection {
+  display: none;
+}
+.selection:checked + .assiette .assiette__prix {
+  transform: translateX(0px);
+}
+.selection:not(:checked) + .assiette:hover .assiette--valide--icone {
+  animation: tour 0.4s linear forwards;
+}
+.selection:checked + .assiette .assiette--valide {
+  transform: scaleX(1);
+  min-width: 60px;
+  background-color: #99e2d0;
+}
+
+/* menu repas assiette */
+.assiette {
+  display: flex;
+  justify-content: stretch;
+  /* start/center décale la div validé */
+  box-shadow: 0px 3px 10px 0px #dddddd;
+  background-color: white;
+  border-radius: 20px;
+  width: 93vw;
+  height: 68px;
+  overflow: hidden;
+}
+.assiette--un {
+  opacity: 0;
+  animation: flou 0.5s linear 0.8s forwards;
+}
+.assiette--deux {
+  opacity: 0;
+  animation: flou 0.5s linear 1s forwards;
+}
+.assiette--trois {
+  opacity: 0;
+  animation: flou 0.5s linear 1.2s forwards;
+}
+.assiette--quatre {
+  opacity: 0;
+  animation: flou 0.5s linear 1.4s forwards;
+}
+.assiette__texte {
+  display: flex;
+  text-indent: 10px;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  min-width: 60%;
+  flex: 1;
+}
+.assiette__texte__menu {
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 300;
+  width: 100%;
+  margin: -10px 0 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.assiette__texte__menu:first-of-type {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 12px 0 0 0;
+  height: 24px;
+}
+.assiette__prix {
+  height: 32px;
+  width: 45px;
+  padding-left: 0px;
+  margin: 36px 3px 0 3px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.4s linear;
+}
+.assiette:hover > .assiette__prix {
+  transform: translateX(0px);
+}
+.assiette--valide {
+  position: relative;
+  left: 1px;
+  /* évite un escalier de l'animation */
+  background-color: rgba(153, 226, 208, 0.7);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  width: 0px;
+  min-width: 0px;
+  height: 68px;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: all 0.4s linear;
+  flex: 0;
+}
+.assiette--valide--icone {
+  font-size: 1.25rem;
+  margin: 24px 0 24px 0;
+  color: white;
+}
+.assiette:hover > .assiette--valide {
+  transform: scaleX(1);
+  min-width: 60px;
+}
+
 /* navigation restaurants */
 .restaurants {
   background-color: whitesmoke;
-  height: 1220px;
+  height: 1190px;
 }
 @media screen and (min-width: 1024px) {
   .restaurants {
@@ -1099,14 +1423,21 @@ body {
   position: absolute;
   bottom: -46px;
   height: 85px;
-  background-color: white;
+  background-color: #f7f7f7;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
 .bandeau__texte__titre {
   text-indent: 3%;
   margin: 0;
+  font-size: 1.7rem;
+  font-weight: 300;
   padding: 28.5px 0 28.5px 0;
+}
+@media screen and (max-width: 320px) {
+  .bandeau__texte__titre {
+    font-size: 1.4rem;
+  }
 }
 .bandeau__texte--selection {
   display: none;

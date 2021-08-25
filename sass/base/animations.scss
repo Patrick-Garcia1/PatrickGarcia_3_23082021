@@ -190,6 +190,7 @@
     90%{transform: rotate(730deg);}
     100%{transform: rotate(720deg);}
 }
+
 /* animation navigation restaurants */
 @keyframes coup{
     10%{transform:scale3d(0.975, 0.975, 1);}
@@ -230,6 +231,36 @@
     88%{transform: scale3d(1.05, 1.05, 1);}
     95%{transform: scale3d(1.2, 1.2, 1);}
     100%{transform: scale3d(1, 1, 1);}
+}
+
+/* animation menu miroir restaurants */
+@keyframes fondu-arrivée{
+    0%{opacity: 0}
+    80%{opacity: 0}
+    90%{opacity: 0.5}
+    100%{opacity: 1}
+} 
+@keyframes détend{
+    0%{transform: scaleX(0.5); }
+    20%{transform: scaleX(0.3); }
+    40%{transform: scaleX(0.55); }
+    60%{transform: scaleX(0.42); }
+    80%{transform: scaleX(0.55); }
+    100%{transform: scaleX(0.5); }    
+}
+@keyframes colle{
+    0%{transform: translateY(10px);}
+    50%{transform: translateY(10px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes flou{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes tour{
+    0%{transform: rotateZ(0deg)}
+    100%{transform: rotateZ(360deg)}
 }
 
 /* animation footer */
