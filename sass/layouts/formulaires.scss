@@ -7,6 +7,9 @@
     text-align: center;
     height: 337px;
     background-color: rgb(245, 245, 245);
+    @media screen and (min-width: 620px){
+        height: 280px;
+    }
     &--zone{ 
         text-align: center;
         height: 50px;

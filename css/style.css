@@ -20,9 +20,14 @@ body {
   background-color: white;
   height: 2262px;
 }
+@media screen and (min-width: 620px) {
+  body {
+    height: 2205px;
+  }
+}
 @media screen and (min-width: 1024px) {
   body {
-    height: 1580px;
+    height: 1525px;
   }
 }
 
@@ -833,6 +838,11 @@ body {
   text-align: center;
   height: 337px;
   background-color: whitesmoke;
+}
+@media screen and (min-width: 620px) {
+  .recherche {
+    height: 280px;
+  }
 }
 .recherche--zone {
   text-align: center;
