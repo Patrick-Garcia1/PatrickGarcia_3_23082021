@@ -795,7 +795,7 @@ body {
   margin-right: 5px;
 }
 
-/* bloc bem coeur réutisilé */
+/* bloc bem coeur réutilisé */
 .coeur {
   position: absolute;
   right: 25px;
@@ -1083,6 +1083,44 @@ body {
 .carte:hover .carte__lien--nouveau {
   z-index: 1;
   animation: tombe 2s linear 0.05s;
+}
+
+/* bandeau des pages menu */
+.bandeau {
+  position: relative;
+}
+.bandeau__image {
+  width: 100%;
+  object-fit: cover;
+  max-height: 250px;
+}
+.bandeau__texte {
+  width: 100%;
+  position: absolute;
+  bottom: -46px;
+  height: 85px;
+  background-color: white;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.bandeau__texte__titre {
+  text-indent: 3%;
+  margin: 0;
+  padding: 28.5px 0 28.5px 0;
+}
+.bandeau__texte--selection {
+  display: none;
+}
+.bandeau__texte--selection:checked + .coeur .coeur--vide {
+  animation: efface 0.5s linear forwards;
+}
+.bandeau__texte--selection:hover + .coeur .coeur__filtre--plein {
+  opacity: 1;
+}
+.bandeau__texte--selection:checked + .coeur .coeur__filtre--plein {
+  animation: grandi-bat 1.8s linear forwards;
+  opacity: 1;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
