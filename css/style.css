@@ -1089,6 +1089,11 @@ body {
   position: relative;
   left: 5%;
 }
+@media screen and (min-width: 1024px) {
+  .repas__titre {
+    left: 10%;
+  }
+}
 .repas__titre--barre {
   display: block;
   width: 100%;
@@ -1114,14 +1119,30 @@ body {
   animation: fondu-arrivée 1.2s linear forwards;
   opacity: 0;
 }
+@media screen and (min-width: 1024px) {
+  .repas__entrée {
+    height: 85px;
+    min-height: unset;
+  }
+}
 .repas__entrée--quatrechoix {
   height: 320px;
+}
+@media screen and (min-width: 1024px) {
+  .repas__entrée--quatrechoix {
+    height: 170px;
+  }
 }
 .repas__entrée--choix {
   width: 93vw;
   height: 68px;
   display: flex;
   transform: translateY(10px);
+}
+@media screen and (min-width: 1024px) {
+  .repas__entrée--choix {
+    width: 30vw;
+  }
 }
 .repas__entrée--choix:nth-child(1) {
   animation: colle 1.6s ease-in-out forwards;
@@ -1147,11 +1168,21 @@ body {
   animation: fondu-arrivée 1.2s linear forwards;
   opacity: 0;
 }
+@media screen and (min-width: 1024px) {
+  .repas__plat {
+    height: 85px;
+  }
+}
 .repas__plat--choix {
   width: 93vw;
   height: 68px;
   display: flex;
   transform: translateY(10px);
+}
+@media screen and (min-width: 1024px) {
+  .repas__plat--choix {
+    width: 30vw;
+  }
 }
 .repas__plat--choix:nth-child(1) {
   animation: colle 1.6s ease-in-out forwards;
@@ -1174,11 +1205,21 @@ body {
   animation: fondu-arrivée 1.2s linear forwards;
   opacity: 0;
 }
+@media screen and (min-width: 1024px) {
+  .repas__dessert {
+    height: 85px;
+  }
+}
 .repas__dessert--choix {
   width: 93vw;
   height: 68px;
   display: flex;
   transform: translateY(10px);
+}
+@media screen and (min-width: 1024px) {
+  .repas__dessert--choix {
+    width: 30vw;
+  }
 }
 .repas__dessert--choix:nth-child(1) {
   animation: colle 1.6s ease-in-out forwards;
@@ -1434,9 +1475,14 @@ body {
   font-weight: 300;
   padding: 28.5px 0 28.5px 0;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .bandeau__texte__titre {
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bandeau__texte__titre {
+    text-align: center;
   }
 }
 .bandeau__texte--selection {

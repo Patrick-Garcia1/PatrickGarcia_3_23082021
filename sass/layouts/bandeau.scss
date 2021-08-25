@@ -20,8 +20,11 @@
             font-size: 1.7rem;
             font-weight: 300;
             padding: 28.5px 0 28.5px 0;
-            @media screen and (max-width: 320px){
+            @media screen and (max-width: 319px){
                 font-size: 1.4rem;
+            }
+            @media screen and (min-width: 1024px){
+                text-align: center;
             }
         }
         &--selection{

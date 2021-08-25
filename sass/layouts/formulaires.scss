@@ -157,6 +157,9 @@
         height: 30px;
         position: relative;
         left: 5%;
+        @media screen and (min-width: 1024px){
+            left: 10%;
+        }
         &--barre{
             display: block;
             width: 100%;
@@ -182,14 +185,24 @@
         min-height: 250px;
         animation: fondu-arrivée 1.2s linear forwards; 
         opacity: 0; 
+        @media screen and (min-width: 1024px){
+            height: 85px;
+            min-height: unset;
+        }
         &--quatrechoix{
             height: 320px; 
+            @media screen and (min-width: 1024px){
+            height: 170px;
+            }
         }
         &--choix{
             width: 93vw;
             height: 68px; 
             display: flex;
             transform: translateY(10px);
+            @media screen and (min-width: 1024px){
+                width: 30vw;
+            }
             &:nth-child(1){  
                 animation: colle 1.6s ease-in-out forwards;
             }
@@ -215,11 +228,17 @@
         height: 250px; 
         animation: fondu-arrivée 1.2s linear forwards; 
         opacity: 0; 
+        @media screen and (min-width: 1024px){
+            height: 85px;
+        }
         &--choix{
             width: 93vw;
             height: 68px; 
             display: flex;
             transform: translateY(10px);
+            @media screen and (min-width: 1024px){
+                width: 30vw;
+            }
             &:nth-child(1){
                 animation: colle 1.6s ease-in-out forwards;
             }
@@ -242,11 +261,17 @@
         height: 250px; 
         animation: fondu-arrivée 1.2s linear forwards; 
         opacity: 0; 
+        @media screen and (min-width: 1024px){
+            height: 85px;
+        }
         &--choix{
             width: 93vw;
             height: 68px; 
             display: flex;
             transform: translateY(10px);
+            @media screen and (min-width: 1024px){
+                width: 30vw;
+            }
             &:nth-child(1){
                 animation: colle 1.6s ease-in-out forwards;
             }
