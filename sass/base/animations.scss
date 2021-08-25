@@ -54,7 +54,11 @@
     80%{transform: scale(0.1);}
     100%{transform: scale(0.1);}
 }
-
+/* titre header */
+@keyframes zoop{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.6);}
+}
 /* animation bouton fleche retour page accueil header */
 @keyframes strillé {
     0% {
@@ -289,6 +293,16 @@
     95%{transform: scale3d(1.2, 1.2, 1);}
     100%{transform: scale3d(1, 1, 1);}
 }
+/* titre menu miroir */
+@keyframes boubou {
+    0% {transform: rotate3d(1,0,0, 0deg);}
+    50% {transform: rotate3d(1,0,0, 360deg);}
+    60% {transform: rotate3d(1,0,0, 420deg);}
+    70% {transform: rotate3d(1,0,0, 370deg);}
+    80% {transform: rotate3d(1,0,0, 330deg);}
+    90% {transform: rotate3d(1,0,0, 350deg);}
+    100% {transform: rotate3d(1,0,0, 360deg);}
+  }
 
 /* animation menu miroir restaurants */
 @keyframes flou{

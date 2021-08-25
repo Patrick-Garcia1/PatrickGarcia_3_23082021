@@ -175,6 +175,15 @@ body {
     transform: scale(0.1);
   }
 }
+/* titre header */
+@keyframes zoop {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.6);
+  }
+}
 /* animation bouton fleche retour page accueil header */
 @keyframes strillé {
   0% {
@@ -759,6 +768,30 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
+/* titre menu miroir */
+@keyframes boubou {
+  0% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, 360deg);
+  }
+  60% {
+    transform: rotate3d(1, 0, 0, 420deg);
+  }
+  70% {
+    transform: rotate3d(1, 0, 0, 370deg);
+  }
+  80% {
+    transform: rotate3d(1, 0, 0, 330deg);
+  }
+  90% {
+    transform: rotate3d(1, 0, 0, 350deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 360deg);
+  }
+}
 /* animation menu miroir restaurants */
 @keyframes flou {
   0% {
@@ -914,12 +947,16 @@ body {
   height: 62px;
   background: white;
 }
+.tête:hover .tête__titre {
+  animation: zoop 2s linear infinite;
+}
 .tête__titre {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 400;
   padding: 11px 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 200px;
 }
 .tête__flèche {
   color: black;
@@ -1618,12 +1655,16 @@ body {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
+.bandeau__texte:hover .bandeau__texte__titre {
+  animation: boubou 1.2s ease-in forwards;
+}
 .bandeau__texte__titre {
   text-indent: 3%;
   margin: 0;
   font-size: 1.7rem;
   font-weight: 300;
   padding: 28.5px 0 28.5px 0;
+  transform-origin: 100% 50%;
 }
 @media screen and (max-width: 319px) {
   .bandeau__texte__titre {
