@@ -6,7 +6,7 @@
     margin: 0px auto;
     text-align: center;
     height: 337px;
-    background-color: rgb(245, 245, 245);
+    background-color: #f7f7f7;;
     @media screen and (min-width: 620px){
         height: 280px;
     }
@@ -144,7 +144,7 @@
     margin: 25px 0 0 0;
     padding: 0;
     background-color: rgb(247, 247, 247);
-    animation: flou 1.2s linear 0s forwards;
+    animation: flou 2s linear 0s forwards;
     &__titre{
         text-transform:uppercase;
         font-size: 0.95rem;
@@ -152,7 +152,6 @@
         margin: 0;
         padding: 40px 0 0 0;
         min-width: 80px;
-        width: 22%;
         max-width: 200px;
         height: 30px;
         position: relative;
@@ -163,15 +162,23 @@
         &--barre{
             display: block;
             width: 100%;
-            max-width: 120px;
+            max-width: 100px;
             height: 2.5px;
             margin-top: 5px;
             background-color: #99E2D0;
             transform-origin: 0% 50%;
             transform: scaleX(0.5); 
+            @media screen and (min-width: 1024px){
+                transform: scaleX(1);
+                max-width: 80vw;
+                width: 80vw;            
+            }
         }
         &:hover .repas__titre--barre{
             animation: détend 0.6s ease-out; 
+            @media screen and (min-width: 1024px){
+                animation: détend 0.3s linear; 
+            }
         }
     }
     &__entrée{
@@ -183,7 +190,7 @@
         margin: 0;
         padding: 5px 0 0 0;
         min-height: 250px;
-        animation: fondu-arrivée 1.2s linear forwards; 
+        animation: flou 1.3s linear forwards; 
         opacity: 0; 
         @media screen and (min-width: 1024px){
             height: 85px;
@@ -204,16 +211,16 @@
                 width: 30vw;
             }
             &:nth-child(1){  
-                animation: colle 1.6s ease-in-out forwards;
+                animation: colle 1.5s ease-in-out forwards;
             }
             &:nth-child(2){
-                animation: colle 1.6s ease-in-out 0.2s forwards;
+                animation: colle 1.5s ease-in-out 0.1s forwards;
             }
             &:nth-child(3){
-                animation: colle 1.6s ease-in-out 0.4s forwards;
+                animation: colle 1.5s ease-in-out 0.2s forwards;
             }
             &:nth-child(4){
-                animation: colle 1.6s ease-in-out 0.6s forwards;
+                animation: colle 1.5s ease-in-out 0.3s forwards;
             }
         }
     }
@@ -226,7 +233,7 @@
         margin: 0;
         padding: 5px 0 0 0;
         height: 250px; 
-        animation: fondu-arrivée 1.2s linear forwards; 
+        animation: flou 1.3s linear forwards; 
         opacity: 0; 
         @media screen and (min-width: 1024px){
             height: 85px;
@@ -240,13 +247,13 @@
                 width: 30vw;
             }
             &:nth-child(1){
-                animation: colle 1.6s ease-in-out forwards;
+                animation: colle 1.5s ease-in-out forwards;
             }
             &:nth-child(2){
-                animation: colle 1.6s ease-in-out 0.2s forwards;
+                animation: colle 1.5s ease-in-out 0.1s forwards;
             }
             &:nth-child(3){
-                animation: colle 1.6s ease-in-out 0.4s forwards;
+                animation: colle 1.5s ease-in-out 0.2s forwards;
             }
         }
     }
@@ -259,7 +266,7 @@
         margin: 0;
         padding: 5px 0 0 0;
         height: 250px; 
-        animation: fondu-arrivée 1.2s linear forwards; 
+        animation: flou 1.3s linear forwards; 
         opacity: 0; 
         @media screen and (min-width: 1024px){
             height: 85px;
@@ -273,13 +280,13 @@
                 width: 30vw;
             }
             &:nth-child(1){
-                animation: colle 1.6s ease-in-out forwards;
+                animation: colle 1.5s ease-in-out forwards;
             }
             &:nth-child(2){
-                animation: colle 1.6s ease-in-out 0.2s forwards;
+                animation: colle 1.5s ease-in-out 0.1s forwards;
             }
             &:nth-child(3){
-                animation: colle 1.6s ease-in-out 0.4s forwards;
+                animation: colle 1.5s ease-in-out 0.2s forwards;
             }
         }
     }
@@ -313,19 +320,19 @@
     overflow: hidden; 
     &--un{
         opacity: 0;
-        animation: flou 0.5s linear 0.8s forwards;
+        animation: flou 0.6s linear 0.8s forwards;
     }
     &--deux{
         opacity: 0;
-        animation: flou 0.5s linear 1s forwards;
+        animation: flou 0.6s linear 0.9s forwards;
     }
     &--trois{
         opacity: 0;
-        animation: flou 0.5s linear 1.2s forwards;
+        animation: flou 0.6s linear 1s forwards;
     }
     &--quatre{
         opacity: 0;
-        animation: flou 0.5s linear 1.4s forwards;
+        animation: flou 0.6s linear 1.1s forwards;
     }
     &__texte{
         display: flex;
@@ -361,9 +368,6 @@
         font-weight: 500;
         text-align: center;
         transition: all 0.4s linear;
-    }
-    &:hover > .assiette__prix{
-        transform: translateX(0px);
     }
     &--valide{ 
         position:relative;
