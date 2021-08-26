@@ -1,0 +1,49 @@
+/* bandeau des pages menu */
+.bandeau{
+    position: relative;
+    &__image{
+        width: 100%;
+        object-fit: cover;
+        max-height: 250px;
+    }
+    &__texte{
+        width: 100%;
+        position: absolute;
+        bottom: -46px;
+        height: 85px;
+        background-color: rgb(247, 247, 247);
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        &:hover .bandeau__texte__titre{
+            animation: boubou 1.2s ease-in forwards;
+        }
+        &__titre{
+            text-indent: 3%;
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: 300;
+            padding: 28.5px 0 28.5px 0;
+            transform-origin: 100% 50%;
+            @media screen and (max-width: 319px){
+                font-size: 1.4rem;
+            }
+            @media screen and (min-width: 1024px){
+                text-align: center;
+            }
+        }
+        &--selection{
+            display: none;
+            &:checked + .coeur .coeur--vide{
+                animation: efface 0.5s linear forwards;
+            }
+            &:hover + .coeur .coeur__filtre--plein{   
+                opacity: 1;
+            }
+            &:checked + .coeur .coeur__filtre--plein{
+                animation: grandi-bat 1.8s linear forwards;
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+    }
+}

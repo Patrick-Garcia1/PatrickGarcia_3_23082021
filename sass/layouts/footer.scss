@@ -1,0 +1,67 @@
+
+.pied{
+    color: white;
+    background-color: rgb(54, 54, 54);
+    height: 203px;
+    margin-top: 30px;
+    &__titre{
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-indent: 7%;
+        margin: 0;
+        padding: 20px 0 10px 0;
+        font-size: 1.15rem;
+    }
+    &__liste{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 0 0 7%;
+        padding: 0;
+        max-width: 300px;
+        @media screen and (min-width: 1024px){
+            max-width: unset;
+            margin: 20px 0 0 0%;
+        }
+        &--element{
+            list-style-type: none;
+            padding: 0;
+            margin: 0 25% 0 0; 
+            @media screen and (min-width: 1024px){
+                margin: 0 1% 0 6%; 
+                width: 18%;
+            }
+            &:hover{
+                transform-origin: 50%;
+                animation: virevolte 0.2s linear 1 forwards;
+            }
+        }
+    }
+}
+.lien{
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem; 
+    font-weight: 500;  
+    cursor: pointer;
+    margin:0;
+    padding: 5px 0 5px 0;
+    display: block;
+    &:link{
+        color: white;
+    }
+    &:visited{
+        color: white;
+    }
+    &__icone{
+        font-size: 0.9rem;
+        width: 18px;
+        margin-right: 5px;
+    }
+}
+
+
+
+
+
+
+
