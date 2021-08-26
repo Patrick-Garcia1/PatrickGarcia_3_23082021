@@ -69,6 +69,7 @@
     text-align: start;
     padding: 0;
     font-size: 1rem;
+    color: black;
     font-weight: 500;
     background-color: rgb(247, 247, 247);  
     @media screen and (min-width: 1024px){
@@ -188,6 +189,7 @@
         align-content:space-around;
         border: none;
         margin: 0;
+        height: 250px;
         padding: 5px 0 0 0;
         min-height: 250px;
         animation: flou 1.3s linear forwards; 

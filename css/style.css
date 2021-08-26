@@ -181,7 +181,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.6);
+    transform: scale(1.25);
   }
   100% {
     transform: scale(1);
@@ -1181,6 +1181,7 @@ body {
   text-align: start;
   padding: 0;
   font-size: 1rem;
+  color: black;
   font-weight: 500;
   background-color: #f7f7f7;
 }
@@ -1307,6 +1308,7 @@ body {
   align-content: space-around;
   border: none;
   margin: 0;
+  height: 250px;
   padding: 5px 0 0 0;
   min-height: 250px;
   animation: flou 1.3s linear forwards;
