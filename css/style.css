@@ -1708,7 +1708,7 @@ body {
   justify-content: center;
   align-items: center;
   animation: loader 2.8s linear forwards;
-  z-index: 1;
+  z-index: 2;
 }
 .conteneur__loader {
   position: relative;
@@ -1725,7 +1725,7 @@ body {
   border-radius: 50%;
   background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
   animation: animate 1.5s linear 2;
-  z-index: 2;
+  z-index: 3;
 }
 .conteneur__loader--filtre:nth-child(1) {
   filter: blur(0px);
@@ -1787,7 +1787,7 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  z-index: 3;
+  z-index: 4;
 }
 .conteneur__loader__icone {
   font-size: 2.5rem;
@@ -1819,7 +1819,7 @@ body {
   left: 25px;
   width: 180px;
   height: 36px;
-  z-index: 4;
+  z-index: 5;
 }
 
 .point {
