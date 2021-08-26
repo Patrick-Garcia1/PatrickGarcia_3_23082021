@@ -13,21 +13,20 @@
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
-
 @keyframes inverse{
-    0%{rotate: 0deg;}  
-    18%{rotate: -64.8deg;}
-    20%{rotate: 0deg;}  
-    22%{rotate: -7.2deg;}
-    24%{rotate: 0deg;}   
-    52%{rotate: -100.8deg;}
-    54%{rotate: 0deg;}   
-    56%{rotate: 0deg;}   
-    70%{rotate: -50.4deg;}
-    72%{rotate: 0deg;}
-    90%{rotate: 0deg;}   
-    100%{rotate: 0deg;}  
-}
+    0%{transform: rotate(0deg);}  
+    18%{transform: rotate(-64.8deg);}
+    20%{transform: rotate(0deg);}  
+    22%{transform: rotate(-7.2deg);}
+    24%{transform: rotate(0deg);}   
+    52%{transform: rotate(-100.8deg);}
+    54%{transform: rotate(0deg);}   
+    56%{transform: rotate(0deg);}   
+    70%{transform: rotate(-50.4deg);}
+    72%{transform: rotate(0deg);}
+    90%{transform: rotate(0deg);}   
+    100%{transform: rotate(0deg);}  
+} 
 @keyframes satgros{
     0%{transform: scale(1);}
     50%{transform: scale(3);}

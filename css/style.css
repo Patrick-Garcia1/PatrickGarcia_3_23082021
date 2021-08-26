@@ -67,40 +67,40 @@ body {
 }
 @keyframes inverse {
   0% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   18% {
-    rotate: -64.8deg;
+    transform: rotate(-64.8deg);
   }
   20% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   22% {
-    rotate: -7.2deg;
+    transform: rotate(-7.2deg);
   }
   24% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   52% {
-    rotate: -100.8deg;
+    transform: rotate(-100.8deg);
   }
   54% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   56% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   70% {
-    rotate: -50.4deg;
+    transform: rotate(-50.4deg);
   }
   72% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   90% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   100% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes satgros {
