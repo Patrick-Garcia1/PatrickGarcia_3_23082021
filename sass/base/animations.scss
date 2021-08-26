@@ -60,7 +60,8 @@
 /* titre header */
 @keyframes zoop{
     0%{transform: scale(1);}
-    100%{transform: scale(1.6);}
+    50%{transform: scale(1.6);}
+    100%{transform: scale(1);}
 }
 /* animation bouton fleche retour page accueil header */
 @keyframes strillé {
