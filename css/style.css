@@ -997,7 +997,6 @@ body {
   height: 20.8px;
   background: linear-gradient(90deg, #FF79DA 40%, #9356DC 75%);
   background-repeat: no-repeat;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
@@ -1107,7 +1106,6 @@ body {
   transform-origin: 50% 50%;
   transform: scale(0);
   background: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -1792,7 +1790,6 @@ body {
   background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   z-index: 4;
 }
 .conteneur__loader__icone {
@@ -1803,7 +1800,6 @@ body {
   background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   z-index: 5;
   animation: couvert 2.5s linear forwards;
 }
