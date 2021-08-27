@@ -85,8 +85,7 @@
             font-size: 2.1rem;
             background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
             -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;   
+            -webkit-background-clip: text;  
             z-index: 4;
         }
         &__icone{
@@ -97,7 +96,6 @@
             background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-            background-clip: text;  
             z-index: 5;
             animation: couvert 2.5s linear forwards;
             &--ombre{
