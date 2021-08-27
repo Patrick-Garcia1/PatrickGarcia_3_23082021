@@ -1654,6 +1654,14 @@ body {
   width: 100%;
   object-fit: cover;
   max-height: 250px;
+  border-radius: 2px;
+}
+@media screen and (min-width: 900px) {
+  .bandeau__image {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 .bandeau__texte {
   width: 100%;
