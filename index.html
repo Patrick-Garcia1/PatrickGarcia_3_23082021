@@ -64,69 +64,66 @@
 
             <!-- Zone de fonctionnement (c'est censé être une zone de choix?)(ça mène où? on en sait rien) (Cette zone n'a aucun sens et n'apporte rien sachant que d'autres parties font le travail, il n'y aurait que "déguster au restaurant" qui serait pertinant mais pas ici, en faisant un icone de choix lors de la composition de menu sur les pages menu et avec un required en réponse oui/non.. Comment perdre les clients dans de la navigation inutile! ça pourrait avoir le titre/rôle d'un <li> de footer..) autant demander directement un virement bancaire, avec comme concept de vendre "l'idée" de commander un repas, parce qu'ils sont pas prêt de manger, vu qu'ils vont passer une heure à appuyer sur des boutons qui servent à rien!-->
 
-            <!-- Fonctionnement -->
-            <aside>
-                
-                <form class='fonctionnement'> 
+            <!-- Fonctionnement -->               
+            <aside class='fonctionnement'> 
                     
-                    <!-- titre -->
-                    <h3 class='fonctionnement__titre'>Fonctionnement</h3>  
+                <!-- titre -->
+                <h3 class='fonctionnement__titre'>Fonctionnement</h3>  
 
-                    <!-- zone de navigation -->
-                    <nav class='fonctionnement__navigation'>   
-                        
-                        <!-- bouton 1 de fonctionnement -->
-                        <button class='bouton' disabled>
+                <!-- zone des boutons -->
+                <section class='fonctionnement__navigation'>   
+                    
+                    <!-- bouton 1 de fonctionnement -->
+                    <button class='bouton'>
 
-                            <!-- numero -->
-                            <span class="bouton--numero">1</span> 
+                        <!-- numero -->
+                        <span class="bouton--numero">1</span> 
 
-                            <!-- icones --> <!-- double classe car taille icone differante pour pas faire de répétitions -->
-                            <i class="fas fa-mobile-alt bouton--noir bouton--tel"></i>
-                            <span class='fa bouton--violet bouton--tel'>&#xf3cd;</span> 
+                        <!-- icones --> <!-- double classe car taille icone differante pour pas faire de répétitions -->
+                        <i class="fas fa-mobile-alt bouton--noir bouton--tel"></i>
+                        <span class='fa bouton--violet bouton--tel'>&#xf3cd;</span> 
 
-                            <!-- texte -->
-                            Choisissez un restaurant 
+                        <!-- texte -->
+                        Choisissez un restaurant 
 
-                            <!-- calque bouton de fonctionnement-->
-                            <span class='bouton--calque'></span>
-                        </button>  
+                        <!-- calque bouton de fonctionnement-->
+                        <span class='bouton--calque'></span>
+                    </button>  
 
-                        <!-- bouton 2 de fonctionnement -->
-                        <button class='bouton' disabled>
+                    <!-- bouton 2 de fonctionnement -->
+                    <button class='bouton'>
 
-                            <!-- numero -->
-                            <span class="bouton--numero">2</span> 
+                        <!-- numero -->
+                        <span class="bouton--numero">2</span> 
 
-                            <!-- icones -->
-                            <i class="fas fa-list-ul bouton--noir"></i>
-                            <span class='fa bouton--violet'>&#xf0ca;</span> 
+                        <!-- icones -->
+                        <i class="fas fa-list-ul bouton--noir"></i>
+                        <span class='fa bouton--violet'>&#xf0ca;</span> 
 
-                            <!-- texte -->
-                            Composez votre menu
+                        <!-- texte -->
+                        Composez votre menu
 
-                            <!-- calque bouton de fonctionnement-->
-                            <span class='bouton--calque'></span>
-                        </button>  
-                        
-                        <!-- bouton 3 de fonctionnement -->
-                        <button class='bouton' disabled>
+                        <!-- calque bouton de fonctionnement-->
+                        <span class='bouton--calque'></span>
+                    </button>  
+                    
+                    <!-- bouton 3 de fonctionnement -->
+                    <button class='bouton'>
 
-                            <!-- numero -->
-                            <span class="bouton--numero">3</span> 
+                        <!-- numero -->
+                        <span class="bouton--numero">3</span> 
 
-                            <!-- icones -->
-                            <i class="fas fa-store bouton--noir"></i>
-                            <span class='fa bouton--violet'>&#xf54e;</span> 
+                        <!-- icones -->
+                        <i class="fas fa-store bouton--noir"></i>
+                        <span class='fa bouton--violet'>&#xf54e;</span> 
 
-                            <!-- texte -->
-                            Dégustez au restaurant
+                        <!-- texte -->
+                        Dégustez au restaurant
 
-                            <!-- calque bouton de fonctionnement-->
-                            <span class='bouton--calque'></span>
-                        </button>    
-                    </nav>       
-                </form>
+                        <!-- calque bouton de fonctionnement-->
+                        <span class='bouton--calque'></span>
+                    </button>    
+                </section>       
             </aside>    
 
             <!-- partie restaurants --> <!-- attention au nommage spécial (non BEM) animation coeur sur plusieurs pages -->
