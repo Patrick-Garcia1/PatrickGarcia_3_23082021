@@ -1,38 +1,10 @@
 @charset "UTF-8";
 body {
-  font-family: "Roboto", sans-serif;
-}
-
-/* header */
-.tête__titre {
-  font-family: "Shrikhand", cursive;
-}
-
-/* fonctionnement */
-.bouton {
-  font-family: "Roboto", sans-serif;
-}
-
-/* bandeau */
-.bandeau__texte__titre {
-  font-family: "Shrikhand", cursive;
-}
-
-/* carte de menu */
-.repas--bouton {
-  font-family: "Roboto", sans-serif;
-}
-
-/* footer */
-.pied__titre {
-  font-family: "Shrikhand", cursive;
-}
-
-body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   background-color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
 }
 
 /* loader */
@@ -930,6 +902,7 @@ body {
 
 /* bouton formulaire carte du menu */
 .repas--bouton {
+  font-family: "Roboto", sans-serif;
   display: block;
   margin: 40px auto 70px auto;
   height: 50px;
@@ -960,6 +933,7 @@ body {
   animation: zoop 4s linear infinite;
 }
 .tête__titre {
+  font-family: "Shrikhand", cursive;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 400;
@@ -1024,6 +998,7 @@ body {
   margin-top: 30px;
 }
 .pied__titre {
+  font-family: "Shrikhand", cursive;
   font-size: 1.4rem;
   font-weight: 400;
   text-indent: 7%;
@@ -1581,6 +1556,7 @@ body {
   animation: boubou 1.2s ease-in forwards;
 }
 .bandeau__texte__titre {
+  font-family: "Shrikhand", cursive;
   text-indent: 3%;
   margin: 0;
   font-size: 1.7rem;
@@ -1788,6 +1764,7 @@ body {
 }
 
 .bouton {
+  font-family: "Roboto", sans-serif;
   width: 87%;
   height: 75px;
   margin: 10px auto;
