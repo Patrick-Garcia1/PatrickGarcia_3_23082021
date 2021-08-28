@@ -16,19 +16,23 @@
     &__flèche{
         color: black;
         text-decoration: none;
-        width: 18.2px;
-        height: 20.8px;
+        width: 18px;
+        height: 20px;
         position:absolute;
-        top: 21px;
-        left: 8%; 
+        top: 9px;
+        left: 2%; 
+        padding: 14px 15px 14px 15px;
         &:visited{
             color: black;
         } 
         &--vide{
             position:absolute;
             font-size: 1.3rem;
-            width: 18.2px;
-            height: 20.8px;  
+            width: 18px;
+            height: 20px;  
+            padding: 14px 15px 14px 15px;
+            top: 0px;
+            left: 0px;
         }
         &:hover .tête__flèche--vide{
             opacity: 0;
@@ -38,8 +42,11 @@
         &--plein{
             position:absolute;
             font-size: 1.3rem;
-            width: 18.2px;
-            height: 20.8px; 
+            width: 18px;
+            height: 20px; 
+            padding: 14px 15px 14px 15px;
+            top: 0px;
+            left: 0px;
             background: linear-gradient(90deg, #FF79DA 40%, #9356DC 75%);
             background-repeat: no-repeat;
             -webkit-background-clip: text; 
