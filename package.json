@@ -4,7 +4,7 @@
   "description": "- Faire\" ce visuel [Maquettes Ohmyfood/maquettes/Accueil.png] en version mobile avec ces visuels pour chaque table [Maquettes Ohmyfood/maquettes/Menu - A╠Ç la franc╠ºaise.png], \r \t[Maquettes Ohmyfood/maquettes/Menu - La note enchante╠üe.png], [Maquettes Ohmyfood/maquettes/Menu - La palette du gou╠ét.png], [Maquettes Ohmyfood/maquettes/Menu - Le de╠ülice des sens.png].\r - Les animations devront correspondre à [Maquettes Ohmyfood/maquettes/Animations/Animation - Page Menu - Apparition progressive.mp4] et [Maquettes Ohmyfood/maquettes/Animations/Animation - Page Menu - Se╠ülection d_un plat.mp4]",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
     "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "Patrick Garcia",
