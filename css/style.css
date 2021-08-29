@@ -1859,7 +1859,8 @@ body {
   z-index: 5;
   animation: couvert 2.5s linear forwards;
 }
-.conteneur__loader__icone--ombre {
+.conteneur__loader__icone::after {
+  content: "";
   position: absolute;
   top: 34px;
   left: 0px;
