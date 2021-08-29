@@ -98,7 +98,8 @@
             -webkit-background-clip: text;
             z-index: 5;
             animation: couvert 2.5s linear forwards;
-            &--ombre{
+            &::after{
+                content:'';
                 position:  absolute;
                 top: 34px;
                 left: 0px;
