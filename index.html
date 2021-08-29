@@ -54,7 +54,7 @@
                 <label for='ville' class='recherche__fa'></label>
 
                 <!-- titre + texte -->
-                <h2 class='recherche__titre'>Réservez le menu qui vous convient</h2>
+                <h2 class='recherche__titre'>Réservez le menu qui vous convient</h2> <!-- Mal fait ou dit. Le choix du menu est fait après le choix du restaurant -->
                 <p class='recherche__texte'>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
                 <!-- bouton de recherche-->
@@ -70,8 +70,8 @@
                 <!-- titre -->
                 <h3 class='fonctionnement__titre'>Fonctionnement</h3>  
 
-                <!-- zone des boutons -->
-                <div class='fonctionnement__navigation'>   
+                <!-- zone des boutons, admétons que c'est une navigation -->
+                <nav class='fonctionnement__navigation'>   
                     
                     <!-- bouton 1 de fonctionnement -->
                     <button class='bouton'>
@@ -123,10 +123,10 @@
                         <!-- calque bouton de fonctionnement-->
                         <span class='bouton--calque'></span>
                     </button>    
-                </div>       
+                </nav>       
             </aside>    
 
-            <!-- partie restaurants --> <!-- attention au nommage spécial (non BEM) animation coeur sur plusieurs pages -->
+            <!-- partie restaurants --> <!-- article parce que "c'est la réponse" du moteur de recherche -->
             <article class='restaurants'>
 
                 <h3 class='restaurants__titre'>Restaurants</h3>
@@ -135,7 +135,7 @@
                 <nav class='restaurants__navigation'>
 
                     <!-- carte restaurant -->
-                    <div class='carte'>
+                    <section class='carte'>
 
                         <!-- lien -->
                         <a href="restaurant/la_palette_du_gout.html" class='carte__lien'>
@@ -143,7 +143,7 @@
                             <img class='carte__lien__image' src='image/restaurants/la-palette-du-gout900.webp'  alt='La palette du goût'>
                             
                             <!-- nom du restaurant et lieu -->
-                            <p class='carte__lien__titre'>La palette du goût</p>
+                            <h4 class='carte__lien__titre'>La palette du goût</h4>
                             <p class='carte__lien__texte'>Ménilmontant</p>
                         </a>
 
@@ -153,10 +153,10 @@
                             <i class="far fa-heart coeur--vide"></i>
                             <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
                         </label>
-                    </div>
+                    </section>
 
                     <!-- carte restaurant -->
-                    <div class='carte'>
+                    <section class='carte'>
 
                         <!-- lien -->
                         <a href="restaurant/la_note_enchantee.html" class='carte__lien'>
@@ -164,7 +164,7 @@
                             <img class='carte__lien__image' src="image/restaurants/la-note-enchantee900.webp" alt="La note enchantée">
                             
                             <!-- nom du restaurant et lieu -->
-                            <p class='carte__lien__titre'>La note enchantée</p>
+                            <h4 class='carte__lien__titre'>La note enchantée</h4>
                             <p class='carte__lien__texte'>Charonne</p>
                         </a>
 
@@ -174,17 +174,17 @@
                             <i class="far fa-heart coeur--vide"></i>
                             <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
                         </label>
-                    </div>
+                    </section>
 
                     <!-- carte restaurant -->
-                    <div class='carte'>
+                    <section class='carte'>
 
                         <!-- lien -->
                         <a href="restaurant/a_la_française.html" class='carte__lien'>
                             <img class='carte__lien__image' src="image/restaurants/a-la-française900.webp" alt="À la française">                
                             
                             <!-- nom du restaurant et lieu -->
-                            <p class='carte__lien__titre'>À la française</p>
+                            <h4 class='carte__lien__titre'>À la française</h4>
                             <p class='carte__lien__texte'>Cité rouge</p>
                         </a>
 
@@ -194,17 +194,17 @@
                             <i class="far fa-heart coeur--vide"></i>
                             <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
                         </label>
-                    </div>
+                    </section>
 
                     <!-- carte restaurant -->
-                    <div class='carte'>
+                    <section class='carte'>
 
                         <!-- lien -->
                         <a href="restaurant/le_delice_des_sens.html" class='carte__lien'>
                             <img class='carte__lien__image' src='image/restaurants/le-delice-des-sens900.webp' alt="Le délice des sens">
                             
                             <!-- nom du restaurant et lieu -->
-                            <p class='carte__lien__titre'>Le délice des sens</p>
+                            <h4 class='carte__lien__titre'>Le délice des sens</h4>
                             <p class='carte__lien__texte'>Folie-Méricourt</p>
                         </a>
 
@@ -214,7 +214,7 @@
                             <i class="far fa-heart coeur--vide"></i>
                             <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
                         </label>
-                    </div>
+                    </section>
                 </nav>
             </article>
         </main>
@@ -223,7 +223,7 @@
         <footer class='pied'>
 
             <!-- titre pied de page -->
-            <h4 class='pied__titre'>ohmyfood</h4>
+            <h5 class='pied__titre'>ohmyfood</h5>
 
             <!-- liste -->
             <ul class='pied__liste'>
