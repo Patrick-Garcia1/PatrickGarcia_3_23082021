@@ -12,6 +12,12 @@ body {
   color: unset;
 }
 
+@media screen and (min-width: 1024px) {
+  ::selection {
+    background-color: #FF79DA;
+    color: #99E2D0;
+  }
+}
 /* loader */
 @keyframes loader {
   99.99% {

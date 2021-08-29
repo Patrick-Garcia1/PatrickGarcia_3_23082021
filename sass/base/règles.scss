@@ -9,3 +9,9 @@ body{
     background-color: unset;
     color: unset;
 }
+@media screen and (min-width: 1024px){
+    ::selection{
+        background-color: #FF79DA;
+        color: #99E2D0;
+    }
+}
