@@ -35,10 +35,12 @@
             top: 0px;
             left: 0px;
         }
-        &:hover .tête__flèche--vide{
-            opacity: 0;
-            transform: translateX(-25px);
-            transition: all 0.3s;
+        @media screen and (min-width: 1024px){
+            &:hover .tête__flèche--vide{
+                opacity: 0;
+                transform: translateX(-25px);
+                transition: all 0.3s;
+            }
         }
         &--plein{
             position:absolute;
@@ -56,9 +58,11 @@
             background-position: left;  /* pour version bg-size */
             transform-origin: 100% 50%; /* pour version scale */ 
         }
-        &:hover .tête__flèche--plein {
-            opacity: 1;
-            animation: strillé 0.3s linear;
+        @media screen and (min-width: 1024px){
+            &:hover .tête__flèche--plein {
+                opacity: 1;
+                animation: strillé 0.3s linear;
+            }
         }
     }
 }

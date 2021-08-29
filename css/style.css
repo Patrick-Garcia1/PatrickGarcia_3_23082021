@@ -7,6 +7,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+::selection {
+  background-color: unset;
+  color: unset;
+}
+
 /* loader */
 @keyframes loader {
   99.99% {
@@ -963,10 +968,12 @@ body {
   top: 0px;
   left: 0px;
 }
-.tête__flèche:hover .tête__flèche--vide {
-  opacity: 0;
-  transform: translateX(-25px);
-  transition: all 0.3s;
+@media screen and (min-width: 1024px) {
+  .tête__flèche:hover .tête__flèche--vide {
+    opacity: 0;
+    transform: translateX(-25px);
+    transition: all 0.3s;
+  }
 }
 .tête__flèche--plein {
   position: absolute;
@@ -986,9 +993,11 @@ body {
   transform-origin: 100% 50%;
   /* pour version scale */
 }
-.tête__flèche:hover .tête__flèche--plein {
-  opacity: 1;
-  animation: strillé 0.3s linear;
+@media screen and (min-width: 1024px) {
+  .tête__flèche:hover .tête__flèche--plein {
+    opacity: 1;
+    animation: strillé 0.3s linear;
+  }
 }
 
 .pied {
@@ -1030,9 +1039,11 @@ body {
     width: 18%;
   }
 }
-.pied__liste--element:hover {
-  transform-origin: 50%;
-  animation: virevolte 0.2s linear 1 forwards;
+@media screen and (min-width: 1024px) {
+  .pied__liste--element:hover {
+    transform-origin: 50%;
+    animation: virevolte 0.2s linear 1 forwards;
+  }
 }
 
 .lien {
@@ -1157,6 +1168,8 @@ body {
 @media screen and (min-width: 1024px) {
   .repas__titre {
     left: 10%;
+    max-width: 80vw;
+    width: 80vw;
   }
 }
 .repas__titre--barre {
@@ -1309,22 +1322,6 @@ body {
   animation: colle 1.5s ease-in-out 0.2s forwards;
 }
 
-/* menu repas selection */
-.selection {
-  display: none;
-}
-.selection:checked + .assiette .assiette__prix {
-  transform: translateX(0px);
-}
-.selection:not(:checked) + .assiette:hover .assiette--valide--icone {
-  animation: tour 0.4s linear forwards;
-}
-.selection:checked + .assiette .assiette--valide {
-  transform: scaleX(1);
-  min-width: 60px;
-  background-color: #99e2d0;
-}
-
 /* menu repas assiette */
 .assiette {
   display: flex;
@@ -1415,115 +1412,39 @@ body {
   min-width: 60px;
 }
 
-/* navigation restaurants */
-.restaurants {
-  background-color: #f7f7f7;
-  height: 1190px;
-}
-@media screen and (min-width: 1024px) {
-  .restaurants {
-    height: 700px;
-  }
-}
-.restaurants__titre {
-  position: relative;
-  margin: 0;
-  text-indent: 6%;
-  font-size: 1.5rem;
-  padding: 55px 0 20px 0;
-}
-.restaurants__navigation {
-  height: 1070px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-@media screen and (min-width: 1024px) {
-  .restaurants__navigation {
-    height: 550px;
-  }
-}
-
-.carte {
-  display: inline;
-  height: 250px;
-  width: 87%;
-  position: relative;
-  color: black;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.5);
-}
-@media screen and (min-width: 1024px) {
-  .carte {
-    width: 45%;
-  }
-}
-.carte:hover {
-  animation: coup 2s ease-in 0.05s forwards;
-}
-.carte__lien {
-  text-decoration: none;
-  background: white;
-}
-.carte__lien:link {
-  color: black;
-}
-.carte__lien:visited {
-  color: black;
-}
-.carte__lien--nouveau {
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  background-color: #99E2D0;
-  width: 80px;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 500;
-  padding: 6px 0;
-  border-radius: 2px;
-  color: #138d75;
-  transform-origin: 10% 50%;
-}
-.carte__lien__image {
-  height: 175px;
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-}
-.carte__lien__titre {
-  margin: 0;
-  padding: 13px 0 0 0;
-  font-size: 1.1rem;
-  text-indent: 4%;
-  font-weight: 600;
-}
-.carte__lien__texte {
-  margin: 0;
-  padding: 5px 0 0 0;
-  text-indent: 4%;
-  font-size: 1.05rem;
-  font-weight: 300;
-}
-.carte__lien--selection {
+/* menu repas selection */
+.selection {
   display: none;
 }
-.carte__lien--selection:checked + .coeur .coeur--vide {
-  animation: efface 0.5s linear forwards;
+@media screen and (max-width: 1023px) {
+  .selection:hover + .assiette .assiette--valide {
+    transform: scaleX(1);
+    min-width: 60px;
+    background-color: #99e2d0;
+  }
+  .selection:checked + .assiette .assiette--valide {
+    transform: scaleX(1);
+    min-width: 60px;
+    background-color: #99e2d0;
+  }
+  .selection:not(:checked) + .assiette .assiette--valide {
+    transform: scaleX(0);
+    min-width: 0px;
+    background-color: #99e2d0;
+  }
+  .selection:checked + .assiette .assiette--valide--icone {
+    animation: tour 0.4s linear forwards;
+  }
 }
-.carte__lien--selection:hover + .coeur .coeur__filtre--plein {
-  opacity: 1;
-}
-.carte__lien--selection:checked + .coeur .coeur__filtre--plein {
-  animation: grandi-bat 1.8s linear forwards;
-  opacity: 1;
-  z-index: 1;
-}
-.carte:hover .carte__lien--nouveau {
-  z-index: 1;
-  animation: tombe 2s linear 0.05s;
+@media screen and (min-width: 1024px) {
+  .selection:checked + .assiette .assiette--valide {
+    transform: scaleX(1);
+    min-width: 60px;
+    background-color: #99e2d0;
+  }
+  .selection:not(:checked) + .assiette:hover .assiette--valide--icone {
+    animation: tour 0.4s linear forwards;
+  }
 }
 
 /* fonctionnement */
@@ -1630,6 +1551,134 @@ body {
   opacity: 0.1;
 }
 
+/* navigation restaurants */
+.restaurants {
+  background-color: #f7f7f7;
+  height: 1190px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    height: 700px;
+  }
+}
+.restaurants__titre {
+  position: relative;
+  margin: 0;
+  text-indent: 6%;
+  font-size: 1.5rem;
+  padding: 55px 0 20px 0;
+}
+.restaurants__navigation {
+  height: 1070px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__navigation {
+    height: 550px;
+  }
+}
+
+.carte {
+  display: inline;
+  height: 250px;
+  width: 87%;
+  position: relative;
+  color: black;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.5);
+}
+@media screen and (min-width: 1024px) {
+  .carte {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carte:hover {
+    animation: coup 2s ease-in 0.05s forwards;
+  }
+}
+.carte__lien {
+  text-decoration: none;
+  background: white;
+}
+.carte__lien:link {
+  color: black;
+}
+.carte__lien:visited {
+  color: black;
+}
+.carte__lien--nouveau {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-color: #99E2D0;
+  width: 80px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 0;
+  border-radius: 2px;
+  color: #138d75;
+  transform-origin: 10% 50%;
+}
+.carte__lien__image {
+  height: 175px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.carte__lien__titre {
+  margin: 0;
+  padding: 13px 0 0 0;
+  font-size: 1.1rem;
+  text-indent: 4%;
+  font-weight: 600;
+}
+.carte__lien__texte {
+  margin: 0;
+  padding: 5px 0 0 0;
+  text-indent: 4%;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+.carte__lien--selection {
+  display: none;
+}
+.carte__lien--selection:checked + .coeur .coeur--vide {
+  animation: efface 0.5s linear forwards;
+}
+.carte__lien--selection:checked + .coeur .coeur__filtre--plein {
+  opacity: 1;
+}
+.carte__lien--selection:checked + .coeur .coeur__filtre--plein {
+  animation: grandi-bat 1.8s linear forwards;
+  opacity: 1;
+  z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .carte__lien--selection:hover + .coeur .coeur--vide {
+    animation: efface 0.5s linear forwards;
+  }
+  .carte__lien--selection:hover + .coeur .coeur__filtre--plein {
+    opacity: 1;
+  }
+  .carte__lien--selection:hover + .coeur .coeur__filtre--plein {
+    animation: grandi-bat 1.8s linear forwards;
+    opacity: 1;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carte:hover .carte__lien--nouveau {
+    z-index: 1;
+    animation: tombe 2s linear 0.05s;
+  }
+}
+
 /* bandeau des pages menu */
 .bandeau {
   position: relative;
@@ -1685,13 +1734,26 @@ body {
 .bandeau__texte--selection:checked + .coeur .coeur--vide {
   animation: efface 0.5s linear forwards;
 }
-.bandeau__texte--selection:hover + .coeur .coeur__filtre--plein {
+.bandeau__texte--selection:checked + .coeur .coeur__filtre--plein {
   opacity: 1;
 }
 .bandeau__texte--selection:checked + .coeur .coeur__filtre--plein {
   animation: grandi-bat 1.8s linear forwards;
   opacity: 1;
   z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .bandeau__texte--selection:hover + .coeur .coeur--vide {
+    animation: efface 0.5s linear forwards;
+  }
+  .bandeau__texte--selection:hover + .coeur .coeur__filtre--plein {
+    opacity: 1;
+  }
+  .bandeau__texte--selection:hover + .coeur .coeur__filtre--plein {
+    animation: grandi-bat 1.8s linear forwards;
+    opacity: 1;
+    z-index: 1;
+  }
 }
 
 /* loader */

@@ -44,7 +44,7 @@
             &:checked + .coeur .coeur--vide{
                 animation: efface 0.5s linear forwards;
             }
-            &:hover + .coeur .coeur__filtre--plein{   
+            &:checked + .coeur .coeur__filtre--plein{   
                 opacity: 1;
             }
             &:checked + .coeur .coeur__filtre--plein{
@@ -52,6 +52,19 @@
                 opacity: 1;
                 z-index: 1;
             }
+            @media screen and (min-width: 1024px){
+                &:hover + .coeur .coeur--vide{
+                    animation: efface 0.5s linear forwards;
+                }
+                &:hover + .coeur .coeur__filtre--plein{   
+                    opacity: 1;
+                }
+                &:hover + .coeur .coeur__filtre--plein{
+                    animation: grandi-bat 1.8s linear forwards;
+                    opacity: 1;
+                    z-index: 1;
+                }
+            }  
         }
     }
 }

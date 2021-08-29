@@ -31,9 +31,11 @@
                 margin: 0 1% 0 6%; 
                 width: 18%;
             }
-            &:hover{
-                transform-origin: 50%;
-                animation: virevolte 0.2s linear 1 forwards;
+            @media screen and (min-width: 1024px){
+                &:hover{
+                    transform-origin: 50%;
+                    animation: virevolte 0.2s linear 1 forwards;
+                }
             }
         }
     }
