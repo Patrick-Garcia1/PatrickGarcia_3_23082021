@@ -1,36 +1,35 @@
 .tête{
-    position: relative;
     height: 62px;
+    position: relative;
     background: $couleur-quatre;
     &:hover .tête__titre{
         animation: zoop 4s linear infinite;
     }
     &__titre{
-        font-family: 'Shrikhand', cursive;
-        text-align: center;
-        font-size: 1.8rem;
-        font-weight: 400;
+        width: 200px;
         padding: 11px 0;
         margin: 0 auto;
-        width: 200px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+        font-family: 'Shrikhand', cursive;
     }
     &__flèche{
         @extend %tap-fleche;
-        color: $couleur-encre;
-        text-decoration: none;
         position:absolute;
         top: 9px;
         left: 2%; 
-        
+        color: $couleur-encre;
+        text-decoration: none;
         &:visited{
             color: $couleur-encre;
         } 
         &--vide{
             @extend %tap-fleche;
             position:absolute;
-            font-size: 1.3rem;
             top: 0px;
             left: 0px;
+            font-size: 1.3rem; 
         }
         @media screen and (min-width: $desktop){
             &:hover .tête__flèche--vide{
@@ -42,9 +41,9 @@
         &--plein{
             @extend %tap-fleche;
             position:absolute;
-            font-size: 1.3rem;
             top: 0px;
             left: 0px;
+            font-size: 1.3rem;
             background: linear-gradient(90deg, $couleur-secondaire 40%, $couleur-primaire 75%);
             background-repeat: no-repeat;
             -webkit-background-clip: text; 

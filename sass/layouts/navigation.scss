@@ -6,10 +6,10 @@
         height: 280px;
     }
     &__titre{
-        text-indent: 6%;
         margin: 0;
         padding: 48px 0 18px 0;
         font-size: $size-deux;
+        text-indent: 6%;
     }
     &__navigation{
         display: flex;
@@ -17,20 +17,20 @@
     }
 }
 .bouton{
-    font-family: 'Roboto', sans-serif;
     width: 87%;
     height: 75px;
+    position: relative;
     margin: 10px auto; 
+    padding: 0;
     border: none;
     border-radius: 20px;
     @include shadow;
-    position: relative;
-    text-align: start;
-    padding: 0;
-    font-size: $size-un;
-    color: $couleur-encre;
-    font-weight: 500;
     background-color: $couleur-bg;  
+    font-size: $size-un;
+    font-weight: 500;
+    text-align: start;
+    color: $couleur-encre;
+    font-family: 'Roboto', sans-serif;
     @media screen and (min-width: $desktop){
         width: 25%;
     }
@@ -42,10 +42,10 @@
         position: absolute;
         left: -10px;
         top: 26px;
+        padding: 3px 8.5px 2px 6.5px;
         background-color: $couleur-primaire;
         border: 1px solid $couleur-primaire;
         border-radius: 22px;
-        padding: 3px 8.5px 2px 6.5px;
         color: $couleur-quatre;
     }
     &:hover .bouton--numero{
@@ -54,24 +54,24 @@
     &--noir{
         width: 14px;
         margin: 0 7% 0 11%;  
-        text-indent: 11%;
         position: relative;
-        font-size: $size-un;  
         color: grey;
+        text-indent: 11%;
+        font-size: $size-un;   
     }
     &:hover .bouton--noir{
         opacity: 0;
     } 
     &--violet{
-        color: $couleur-primaire;
+        width: 14px;
         position: absolute;
         bottom: 30px;
         left: 0px;
-        width: 14px;
-        margin: 0 7% 0 11%;  
+        z-index: -1;
+        margin: 0 7% 0 11%; 
+        color: $couleur-primaire;
         text-indent: 11%;
         font-size: $size-un;
-        z-index: -1;
     }
     &:hover .bouton--violet{
         z-index: 1;
@@ -86,11 +86,11 @@
         right: 0;
         bottom: 0;
         left: 0;
+        z-index: -1;
         background-color: $couleur-primaire;
         @include shadow;
         border-radius: 20px;
         opacity: 0;
-        z-index: -1;
     }
     &:hover::after{
         z-index: 1;
@@ -100,17 +100,17 @@
 
 /* navigation restaurants */
 .restaurants{
-    background-color: $couleur-bg;
     height: 1190px;
+    background-color: $couleur-bg;
     @media screen and (min-width: $desktop){
         height: 700px;
     }
     &__titre{
         position: relative;
         margin: 0;
-        text-indent: 6%;
-        font-size: $size-deux;
         padding: 55px 0 20px 0;
+        text-indent: 6%;
+        font-size: $size-deux;  
     }
     &__navigation{
         height: 1070px;
@@ -123,13 +123,13 @@
     }
 }
 .carte{
-    display: inline;
     height: 250px;
     width: 87%;
+    display: inline;
     position: relative;
+    border-radius: 20px;
     color: $couleur-encre;
     background: $couleur-quatre;
-    border-radius: 20px;
     @include shadow;
     @media screen and (min-width: $desktop){
         width: 45%;
@@ -140,8 +140,8 @@
         } 
     }
     &__lien{
-        text-decoration: none;
         background: $couleur-quatre;
+        text-decoration: none;
         &:link{
             color: $couleur-encre;
         }
@@ -149,25 +149,25 @@
             color: $couleur-encre;
         }
         &--nouveau{
+            width: 80px;
             position: absolute;
             right: 12px;
             top: 12px;
+            padding:6px 0;
+            transform-origin: 10% 50%;
+            border-radius: 2px;
             background-color: $couleur-tertiaire;
-            width: 80px;
             text-align: center;
             font-size: 0.8rem;
             font-weight: 500;
-            padding:6px 0;
-            border-radius: 2px;
             color:  darken($couleur-tertiaire, 40%);
-            transform-origin: 10% 50%;
         }
         &__image{
             height: 175px;
             width: 100%;
+            object-fit: cover;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-            object-fit: cover;
         }
         &__titre{
             margin: 0;
@@ -192,9 +192,9 @@
                 opacity: 1;
             }
             &:checked + .coeur .coeur__filtre--plein{
-                animation: grandi-bat 1.8s linear forwards;
                 opacity: 1;
                 z-index: 1;
+                animation: grandi-bat 1.8s linear forwards;
             }
             @media screen and (min-width: $desktop){
                 &:hover + .coeur .coeur--vide{
@@ -204,9 +204,9 @@
                     opacity: 1;
                 }
                 &:hover + .coeur .coeur__filtre--plein{
-                    animation: grandi-bat 1.8s linear forwards;
-                    opacity: 1;
                     z-index: 1;
+                    opacity: 1;
+                    animation: grandi-bat 1.8s linear forwards;
                 }
             }   
         }

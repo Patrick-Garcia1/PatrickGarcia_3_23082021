@@ -1,17 +1,17 @@
 /* bouton moteur de recherche avec activation animation */
 .recherche{
     &--bouton{
-        display: block;
-        margin: 35px auto;
         height: 50px;
         width: 220px;
-        border-radius: 25px;
+        display: block;
+        margin: 35px auto;
         border: none;
-        @include shadow;
-        background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
-        color: $couleur-quatre;
+        border-radius: 25px;
         font-size: 0.95rem;
         font-weight: 500;
+        @include shadow;
+        background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
+        color: $couleur-quatre; 
         &:hover{  
             @extend %bouton;
             box-shadow: 0px 5px 10px 0px darken($ombre, 15%); 
@@ -25,10 +25,10 @@
         }
     } 
     &__archer{
+        width: 24px; /*  largeur pour la fin d'animation fleche-tension, que i ne sorte pas de sa boite */ 
         position: absolute;
         left: 22vw;
         top: 15px;
-        width: 24px; /*  largeur pour la fin d'animation fleche-tension, que i ne sorte pas de sa boite */ 
         font-size: $size-un;
         &--fleche{
             color: $couleur-encre; 
@@ -39,18 +39,18 @@
 /* bouton formulaire carte du menu */
 .repas{
     &--bouton{
-        font-family: 'Roboto', sans-serif;
-        display: block;
-        margin: 40px auto 70px auto;
         height: 50px;
         width: 185px;
-        border-radius: 25px;
+        display: block;
+        margin: 40px auto 70px auto;
         border: none;
+        border-radius: 25px;
+        font-size: $size-un;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
         @include shadow;
         background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
         color: $couleur-quatre;
-        font-size: $size-un;
-        font-weight: 400;
         &:hover{  
             @extend %bouton;
             box-shadow: 0px 5px 10px 0px darken($ombre, 15%); 
