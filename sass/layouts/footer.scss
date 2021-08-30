@@ -1,7 +1,7 @@
 
 .pied{
-    color: white;
-    background-color: rgb(54, 54, 54);
+    color: $couleur-quatre;
+    background-color: $couleur-footer;
     height: 203px;
     margin-top: 30px;
     &__titre{
@@ -19,7 +19,7 @@
         margin: 0 0 0 7%;
         padding: 0;
         max-width: 300px;
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: $desktop){
             max-width: unset;
             margin: 20px 0 0 0%;
         }
@@ -27,11 +27,11 @@
             list-style-type: none;
             padding: 0;
             margin: 0 25% 0 0; 
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: $desktop){
                 margin: 0 1% 0 6%; 
                 width: 18%;
             }
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: $desktop){
                 &:hover{
                     transform-origin: 50%;
                     animation: virevolte 0.2s linear 1 forwards;
@@ -41,7 +41,7 @@
     }
 }
 .lien{
-    color: white;
+    color: $couleur-quatre;
     text-decoration: none;
     font-size: 0.95rem; 
     font-weight: 500;  
@@ -50,10 +50,10 @@
     padding: 5px 0 5px 0;
     display: block;
     &:link{
-        color: white;
+        color: $couleur-quatre;
     }
     &:visited{
-        color: white;
+        color: $couleur-quatre;
     }
     &__icone{
         font-size: 0.9rem;

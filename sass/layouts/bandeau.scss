@@ -18,7 +18,7 @@
         position: absolute;
         bottom: -46px;
         height: 85px;
-        background-color: rgb(247, 247, 247);
+        background-color: $couleur-bg;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         &:hover .bandeau__texte__titre{
@@ -35,7 +35,7 @@
             @media screen and (max-width: 319px){
                 font-size: 1.4rem;
             }
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: $desktop){
                 text-align: center;
             }
         }
@@ -52,7 +52,7 @@
                 opacity: 1;
                 z-index: 1;
             }
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: $desktop){
                 &:hover + .coeur .coeur--vide{
                     animation: efface 0.5s linear forwards;
                 }

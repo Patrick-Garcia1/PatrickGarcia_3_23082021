@@ -9,7 +9,7 @@
         border: none;
         box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.5);
         background: linear-gradient(170deg, rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
-        color: white;
+        color: $couleur-quatre;
         font-size: 0.95rem;
         font-weight: 500;
         &:hover{  /* demander pour ici couleur avec seulement changement opacité vs charge navigateur */
@@ -31,9 +31,9 @@
         left: 22vw;
         top: 15px;
         width: 24px; /*  largeur pour la fin d'animation fleche-tension, que i ne sorte pas de sa boite */ 
-        font-size: 1rem;
+        font-size: $size-un;
         &--fleche{
-            color: black; 
+            color: $couleur-encre; 
         }
     }   
 }
@@ -50,8 +50,8 @@
         border: none;
         box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.5);
         background: linear-gradient(170deg, rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
-        color: white;
-        font-size: 1rem;
+        color: $couleur-quatre;
+        font-size: $size-un;
         font-weight: 400;
         &:hover{  
             cursor: pointer;

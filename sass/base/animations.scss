@@ -323,7 +323,7 @@
     80%{transform: scaleX(0.55); }
     100%{transform: scaleX(0.5); }    
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: $desktop){
     @keyframes détend{
         0%{transform: translateY(0px); }
         50%{transform: translateY(7.5px); }

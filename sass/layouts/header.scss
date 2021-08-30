@@ -1,7 +1,7 @@
 .tête{
     position: relative;
     height: 62px;
-    background: white;
+    background: $couleur-quatre;
     &:hover .tête__titre{
         animation: zoop 4s linear infinite;
     }
@@ -15,7 +15,7 @@
         width: 200px;
     }
     &__flèche{
-        color: black;
+        color: $couleur-encre;
         text-decoration: none;
         width: 18px;
         height: 20px;
@@ -24,7 +24,7 @@
         left: 2%; 
         padding: 14px 15px 14px 15px;
         &:visited{
-            color: black;
+            color: $couleur-encre;
         } 
         &--vide{
             position:absolute;
@@ -35,7 +35,7 @@
             top: 0px;
             left: 0px;
         }
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: $desktop){
             &:hover .tête__flèche--vide{
                 opacity: 0;
                 transform: translateX(-25px);
@@ -50,7 +50,7 @@
             padding: 14px 15px 14px 15px;
             top: 0px;
             left: 0px;
-            background: linear-gradient(90deg, #FF79DA 40%, #9356DC 75%);
+            background: linear-gradient(90deg, $couleur-secondaire 40%, $couleur-primaire 75%);
             background-repeat: no-repeat;
             -webkit-background-clip: text; 
             color: transparent;
@@ -58,7 +58,7 @@
             background-position: left;  /* pour version bg-size */
             transform-origin: 100% 50%; /* pour version scale */ 
         }
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: $desktop){
             &:hover .tête__flèche--plein {
                 opacity: 1;
                 animation: strillé 0.3s linear;

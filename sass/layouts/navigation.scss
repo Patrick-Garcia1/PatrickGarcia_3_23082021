@@ -1,15 +1,15 @@
 /* fonctionnement */
 .fonctionnement{
     height: 440px;
-    background: white;
-    @media screen and (min-width: 1024px){
+    background: $couleur-quatre;
+    @media screen and (min-width: $desktop){
         height: 280px;
     }
     &__titre{
         text-indent: 6%;
         margin: 0;
         padding: 48px 0 18px 0;
-        font-size: 1.5rem;
+        font-size: $size-deux;
     }
     &__navigation{
         display: flex;
@@ -27,11 +27,11 @@
     position: relative;
     text-align: start;
     padding: 0;
-    font-size: 1rem;
-    color: black;
+    font-size: $size-un;
+    color: $couleur-encre;
     font-weight: 500;
-    background-color: rgb(247, 247, 247);  
-    @media screen and (min-width: 1024px){
+    background-color: $couleur-bg;  
+    @media screen and (min-width: $desktop){
         width: 25%;
     }
     &:hover{
@@ -42,11 +42,11 @@
         position: absolute;
         left: -10px;
         top: 26px;
-        background-color: #9356DC;
-        border: 1px solid #9356DC;
+        background-color: $couleur-primaire;
+        border: 1px solid $couleur-primaire;
         border-radius: 22px;
         padding: 3px 8.5px 2px 6.5px;
-        color: white;
+        color: $couleur-quatre;
     }
     &:hover .bouton--numero{
         animation: tourne 1.5s linear forwards;
@@ -56,28 +56,28 @@
         margin: 0 7% 0 11%;  
         text-indent: 11%;
         position: relative;
-        font-size: 1rem;  
+        font-size: $size-un;  
         color: grey;
     }
     &:hover .bouton--noir{
         opacity: 0;
     } 
     &--violet{
-        color: #9356DC;
+        color: $couleur-primaire;
         position: absolute;
         bottom: 30px;
         left: 0px;
         width: 14px;
         margin: 0 7% 0 11%;  
         text-indent: 11%;
-        font-size: 1rem;
+        font-size: $size-un;
         z-index: -1;
     }
     &:hover .bouton--violet{
         z-index: 1;
     }
     &--tel{
-        font-size: 1.1rem;
+        font-size: $size-trois;
         
     }
     &::after{
@@ -87,7 +87,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: #9356DC;
+        background-color: $couleur-primaire;
         box-shadow: 0px 5px 10px 0px #000;
         border-radius: 20px;
         opacity: 0;
@@ -103,14 +103,14 @@
 .restaurants{
     background-color: #f7f7f7;
     height: 1190px;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: $desktop){
         height: 700px;
     }
     &__titre{
         position: relative;
         margin: 0;
         text-indent: 6%;
-        font-size: 1.5rem;
+        font-size: $size-deux;
         padding: 55px 0 20px 0;
     }
     &__navigation{
@@ -118,7 +118,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: $desktop){
             height: 550px;
         }
     }
@@ -128,32 +128,32 @@
     height: 250px;
     width: 87%;
     position: relative;
-    color: black;
-    background: white;
+    color: $couleur-encre;
+    background: $couleur-quatre;
     border-radius: 20px;
     box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.5);
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: $desktop){
         width: 45%;
     }
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: $desktop){
         &:hover{
             animation: coup 2s ease-in 0.05s forwards;
         } 
     }
     &__lien{
         text-decoration: none;
-        background: white;
+        background: $couleur-quatre;
         &:link{
-            color: black;
+            color: $couleur-encre;
         }
         &:visited{
-            color: black;
+            color: $couleur-encre;
         }
         &--nouveau{
             position: absolute;
             right: 12px;
             top: 12px;
-            background-color: #99E2D0;
+            background-color: $couleur-tertiaire;
             width: 80px;
             text-align: center;
             font-size: 0.8rem;
@@ -173,7 +173,7 @@
         &__titre{
             margin: 0;
             padding: 13px 0 0 0;
-            font-size: 1.1rem;
+            font-size: $size-trois;
             text-indent: 4%;
             font-weight: 600;
         }
@@ -197,7 +197,7 @@
                 opacity: 1;
                 z-index: 1;
             }
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: $desktop){
                 &:hover + .coeur .coeur--vide{
                     animation: efface 0.5s linear forwards;
                 }
@@ -212,7 +212,7 @@
             }   
         }
     }
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: $desktop){
         &:hover .carte__lien--nouveau{
             z-index: 1;
             animation: tombe 2s linear 0.05s;
