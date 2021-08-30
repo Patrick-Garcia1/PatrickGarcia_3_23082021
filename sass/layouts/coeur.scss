@@ -19,13 +19,13 @@
         &--plein{
             position: absolute;
             padding: 12px 11px 12px 13px;
-            font-size: $size-deux;
-            -webkit-background-clip: text; 
+            font-size: $size-deux; 
             color: transparent;
             opacity: 0;
             transform-origin: 50% 50%;
             transform: scale(0);  
             background: linear-gradient(200deg, $couleur-primaire 35%, $couleur-secondaire 65%);
+            -webkit-background-clip: text;
         }
     }
 } 
