@@ -1,0 +1,27 @@
+/* header */
+%tap-fleche {
+    width: 18px;
+    height: 20px;
+    padding: 14px 15px 14px 15px;
+}
+
+/* coeur*/
+%tap-coeur{
+    height: 48px;
+    width: 48px;
+}
+
+/* formulaire repas */
+%case{
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: space-around;
+    align-content:space-around;
+    border: none;
+}
+%choix{
+    width: 93vw;
+    height: 68px; 
+    display: flex;
+    transform: translateY(10px);
+}

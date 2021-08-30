@@ -1,10 +1,9 @@
 /* bloc bem coeur réutilisé */
 .coeur{
+    @extend %tap-coeur;
     position: absolute;
     right: 10px;
     bottom: 20px;
-    height: 48px;
-    width: 48px;
     &:hover{
         cursor:grab;
     } 
@@ -13,11 +12,10 @@
         padding: 13px 12.5px 12px 12.8px;
     }
     &__filtre{
+        @extend %tap-coeur;
         position: absolute;
         right: 0px;
         top: 0px;
-        width: 48px;
-        height: 48px;
         &--plein{
             font-size: $size-deux;
             padding: 12px 11px 12px 13px;

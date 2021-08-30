@@ -15,23 +15,20 @@
         width: 200px;
     }
     &__flèche{
+        @extend %tap-fleche;
         color: $couleur-encre;
         text-decoration: none;
-        width: 18px;
-        height: 20px;
         position:absolute;
         top: 9px;
         left: 2%; 
-        padding: 14px 15px 14px 15px;
+        
         &:visited{
             color: $couleur-encre;
         } 
         &--vide{
+            @extend %tap-fleche;
             position:absolute;
             font-size: 1.3rem;
-            width: 18px;
-            height: 20px;  
-            padding: 14px 15px 14px 15px;
             top: 0px;
             left: 0px;
         }
@@ -43,11 +40,9 @@
             }
         }
         &--plein{
+            @extend %tap-fleche;
             position:absolute;
             font-size: 1.3rem;
-            width: 18px;
-            height: 20px; 
-            padding: 14px 15px 14px 15px;
             top: 0px;
             left: 0px;
             background: linear-gradient(90deg, $couleur-secondaire 40%, $couleur-primaire 75%);
