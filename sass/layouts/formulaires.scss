@@ -20,7 +20,7 @@
         background-color: rgb(231, 231, 231);
         font-size: 0.95rem;
         font-weight: 600;
-        box-shadow: inset 0px 2px 3px rgb(180, 179, 179);
+        box-shadow: inset 0px 2px 3px $ombre;
         color: $couleur-encre;
         &:focus{
             background-color: $couleur-secondaire; 
@@ -179,7 +179,7 @@
 .assiette{
     display: flex;
     justify-content:stretch; /* start/center décale la div validé */
-    box-shadow: 0px 3px 10px 0px rgb(221, 221, 221);
+    @include shadow;
     background-color: $couleur-quatre;
     border-radius: 20px;
     width: 93vw;
@@ -239,7 +239,7 @@
     &--valide{ 
         position:relative;
         left: 1px; /* évite un escalier de l'animation */
-        background-color: rgba(153, 226, 208, 0.7);
+        background-color: lighten($couleur-tertiaire, 10%);
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         display:flex;
@@ -270,17 +270,17 @@
         &:hover + .assiette .assiette--valide{
             transform: scaleX(1); 
             min-width: 60px;
-            background-color: rgba(153, 226, 208, 1);
+            background-color: $couleur-tertiaire;
         }
         &:checked + .assiette .assiette--valide{
             transform: scaleX(1); 
             min-width: 60px;
-            background-color: rgba(153, 226, 208, 1);
+            background-color: $couleur-tertiaire;
         }
         &:not(:checked) + .assiette .assiette--valide{
             transform: scaleX(0); 
             min-width: 0px;
-            background-color: rgba(153, 226, 208, 1);
+            background-color: $couleur-tertiaire;
         }
         &:checked + .assiette .assiette--valide--icone{
             animation: tour 0.4s linear forwards;
@@ -290,7 +290,7 @@
         &:checked + .assiette .assiette--valide{
             transform: scaleX(1); 
             min-width: 60px;
-            background-color: rgba(153, 226, 208, 1);
+            background-color: $couleur-tertiaire;
         }
         &:not(:checked) + .assiette:hover .assiette--valide--icone{
             animation: tour 0.4s linear forwards;

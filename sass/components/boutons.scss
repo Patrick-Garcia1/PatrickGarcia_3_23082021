@@ -7,16 +7,14 @@
         width: 220px;
         border-radius: 25px;
         border: none;
-        box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.5);
-        background: linear-gradient(170deg, rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
+        @include shadow;
+        background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
         color: $couleur-quatre;
         font-size: 0.95rem;
         font-weight: 500;
-        &:hover{  /* demander pour ici couleur avec seulement changement opacité vs charge navigateur */
-            cursor: pointer;
-            box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.8);      /* darken */
-            opacity: 0.9;                                             /* lighten */
-            animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+        &:hover{  
+            @extend %bouton;
+            box-shadow: 0px 5px 10px 0px darken($ombre, 15%); 
         }
         &:focus + .recherche__archer{  
             animation: fleche 1.5s linear 0s 1 forwards;
@@ -48,16 +46,14 @@
         width: 185px;
         border-radius: 25px;
         border: none;
-        box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.5);
-        background: linear-gradient(170deg, rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
+        @include shadow;
+        background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
         color: $couleur-quatre;
         font-size: $size-un;
         font-weight: 400;
         &:hover{  
-            cursor: pointer;
-            box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.8);      /* darken */
-            opacity: 0.9;                                             /* lighten */
-            animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+            @extend %bouton;
+            box-shadow: 0px 5px 10px 0px darken($ombre, 15%); 
         }
     }
 }

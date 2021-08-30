@@ -1,15 +1,16 @@
-@import "utils/extensions";
+
 @import "utils/variables";
+@import "utils/extensions";
 @import "utils/mixins";
-@import "base/règles";
+@import "base/regles";
 @import "base/animations";
 @import "components/boutons";
 @import "layouts/header";
-@import "layouts/footer";
-@import "layouts/coeur";
+@import "layouts/bandeau";
 @import "layouts/formulaires";
 @import "layouts/navigation";
-@import "layouts/bandeau";
+@import "layouts/coeur";
+@import "layouts/footer";
 @import "pages/loader";
 
 

@@ -23,7 +23,7 @@
     margin: 10px auto; 
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.5);
+    @include shadow;
     position: relative;
     text-align: start;
     padding: 0;
@@ -87,7 +87,7 @@
         bottom: 0;
         left: 0;
         background-color: $couleur-primaire;
-        box-shadow: 0px 5px 10px 0px #000;
+        @include shadow;
         border-radius: 20px;
         opacity: 0;
         z-index: -1;
@@ -130,7 +130,7 @@
     color: $couleur-encre;
     background: $couleur-quatre;
     border-radius: 20px;
-    box-shadow: 0px 5px 10px 0px rgba(180,180,180, 0.5);
+    @include shadow;
     @media screen and (min-width: $desktop){
         width: 45%;
     }
@@ -159,7 +159,7 @@
             font-weight: 500;
             padding:6px 0;
             border-radius: 2px;
-            color:  #138d75;
+            color:  darken($couleur-tertiaire, 40%);
             transform-origin: 10% 50%;
         }
         &__image{
