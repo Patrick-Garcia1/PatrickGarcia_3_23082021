@@ -18,6 +18,7 @@
         border-radius: 50%;
         background: linear-gradient($couleur-primaire, $couleur-tertiaire, $couleur-secondaire); 
         animation: disparait 0.5s ease-in-out forwards 2.3s; 
+            /* couches de blur */
         &--filtre{   
             width: 100%;
             height: 100%;
@@ -51,7 +52,7 @@
             &:nth-child(6){
                 background: transparent;
                 animation: inverse 2.5s linear;
-            }
+            } /* 3 satellites */
             &--sat{
                 width: 5px;
                 height: 5px;
@@ -74,7 +75,7 @@
                     background: radial-gradient($couleur-secondaire 50%, $couleur-load 0%);
                 }
             }
-        }
+        } /* ohmyfood */
         &__texte{
             height: 50px;
             position: absolute;
@@ -87,7 +88,7 @@
             font-size: 2.1rem;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;      
-        }
+        } /* couvert */
         &__icone{
             position: absolute;
             left: 98.75px;
@@ -98,6 +99,7 @@
             -webkit-background-clip: text;
             font-size: 2.5rem;
             animation: couvert 2.5s linear forwards;
+            /* ombre couvert */
             &::after{
                 content:'';
                 width: 32.5px;
@@ -110,7 +112,7 @@
                 filter: blur(15px);
                 transform: scale3d(1, 0.3, 1); 
             }
-        }
+        } /* 5 points horizontaux */
         &--point{
             width: 180px;
             height: 36px;
@@ -122,6 +124,8 @@
         }
     }
 } 
+
+/* 5 points horizontaux */
 .point{
     width: 36px;
     height: 36px;

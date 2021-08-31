@@ -6,16 +6,17 @@
     bottom: 20px;
     &:hover{
         cursor:grab;
-    } 
+    } /* coeur vide */
     &--vide{
         padding: 13px 12.5px 12px 12.8px;
         font-size: 1.48rem; 
-    }
+    } /* zone apparition du coeur plein */
     &__filtre{
         @extend %tap-coeur;
         position: absolute;
         right: 0px;
         top: 0px;
+        /* coeur plein */
         &--plein{
             position: absolute;
             padding: 12px 11px 12px 13px;

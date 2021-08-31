@@ -1,10 +1,11 @@
+/* header */
 .tête{
     height: 62px;
     position: relative;
     background: $coul-bg;
     &:hover .tête__titre{
         animation: zoop 4s linear infinite;
-    }
+    } /* nom du site */
     &__titre{
         width: 200px;
         padding: 11px 0;
@@ -13,7 +14,7 @@
         font-weight: 400;
         text-align: center;
         font-family: 'Shrikhand', cursive;
-    }
+    } /* zone flèche */
     &__flèche{
         @extend %tap-fleche;
         position:absolute;
@@ -23,7 +24,7 @@
         text-decoration: none;
         &:visited{
             color: $couleur-encre;
-        } 
+        } /* icone flèche */
         &--vide{
             @extend %tap-fleche;
             position:absolute;
@@ -37,7 +38,7 @@
                 transform: translateX(-25px);
                 transition: all 0.3s;
             }
-        }
+        } /* element d'animation fleche */
         &--plein{
             @extend %tap-fleche;
             position:absolute;

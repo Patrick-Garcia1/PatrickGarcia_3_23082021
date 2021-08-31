@@ -12,7 +12,7 @@
             display: block;
             margin: 0 auto;  
         }
-    }
+    } /* zone en dessous de l'image */
     &__texte{
         width: 100%;
         height: 85px;
@@ -23,7 +23,7 @@
         background-color: $couleur-bg;
         &:hover .bandeau__texte__titre{
             animation: boubou 1.2s ease-in forwards;
-        }
+        } /* nom de la table (restaurant) */
         &__titre{
             padding: 28.5px 0 28.5px 0;
             margin: 0;
@@ -39,7 +39,7 @@
                 text-align: center;
                 text-indent: 0;
             }
-        }
+        } /* coeur et effet/animation */
         &--selection{
             display: none;
             &:checked + .coeur .coeur--vide{

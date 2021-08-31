@@ -9,7 +9,7 @@
     background-color: $couleur-bg;
     @media screen and (min-width: 620px){
         height: 280px;
-    }
+    } /* placeholder */
     &--zone{ 
         width: 100%;
         height: 50px;
@@ -28,10 +28,10 @@
         &:focus ~ .recherche__archer .recherche__archer--fleche{
             opacity: 0;
         }
-    }
+    } /* titre du formulaire */
     &__titre{
         margin: 20px 15% 0 15%;
-    }
+    } /* texte pub formulaire */
     &__texte{
         margin: 10px 10% 0 10%;
         font-size: 1.05rem;
@@ -45,6 +45,7 @@
     padding: 0;
     background-color: $couleur-bg;
     animation: flou 2s linear 0s forwards;
+    /* titre des zones de repas */
     &__titre{
         height: 30px;
         min-width: 80px;
@@ -60,7 +61,7 @@
             width: 80vw; 
             max-width: 80vw;
             left: 10%;
-        }
+        } /* barre sous les titres */
         &--barre{
             width: 100%;
             max-width: 100px;
@@ -82,7 +83,7 @@
                 animation: détend 0.3s linear; 
             }
         }
-    }
+    } /* zone des entrées */
     &__entrée{
         height: 250px;
         min-height: 250px;
@@ -94,13 +95,13 @@
         @media screen and (min-width: $desktop){
             height: 85px;
             min-height: unset;
-        }
+        } /* zone pour 4 choix */
         &--quatrechoix{
             height: 320px; 
             @media screen and (min-width: $desktop){
             height: 170px;
             }
-        }
+        } /* type d'entrée */
         &--choix{
             @extend %choix;
             @media screen and (min-width: $desktop){
@@ -119,7 +120,7 @@
                 animation: colle 1.5s ease-in-out 0.3s forwards;
             }
         }
-    }
+    } /* zone des plats */
     &__plat{
         height: 250px; 
         @extend %case;
@@ -129,7 +130,7 @@
         animation: flou 1.3s linear forwards; 
         @media screen and (min-width: $desktop){
             height: 85px;
-        }
+        } /* type de plat */
         &--choix{
             @extend %choix;
             @media screen and (min-width: $desktop){
@@ -145,7 +146,7 @@
                 animation: colle 1.5s ease-in-out 0.2s forwards;
             }
         }
-    }
+    } /* zone des desserts */
     &__dessert{
         height: 250px; 
         @extend %case;
@@ -155,7 +156,7 @@
         animation: flou 1.3s linear forwards; 
         @media screen and (min-width: $desktop){
             height: 85px;
-        }
+        } /* type des desserts */
         &--choix{
             @extend %choix;
             @media screen and (min-width: $desktop){
@@ -174,7 +175,7 @@
     }
 }
 
-/* menu repas assiette */
+/* zone chaque assiette */
 .assiette{
     width: 93vw;
     height: 68px; 
@@ -199,7 +200,7 @@
     &--quatre{
         opacity: 0;
         animation: flou 0.6s linear 1.1s forwards;
-    }
+    } /* nom de l'assiette */
     &__texte{
         min-width: 60%;
         display: flex;
@@ -207,6 +208,7 @@
         justify-content: flex-start;
         text-indent: 10px;
         flex: 1;
+        /* texte accompagnant du menu */
         &__menu{
             width: 100%;
             width: 100%;
@@ -224,7 +226,7 @@
                 font-weight: 500;
             }
         }
-    }
+    } /* prix de l'assiette */
     &__prix{
         height: 32px;
         width: 45px;
@@ -234,7 +236,7 @@
         font-weight: 500;
         text-align: center;
         transition: all 0.4s linear;
-    }
+    } /* zone validation choix assiette */
     &--valide{ 
         width: 0px;
         min-width: 0px;
@@ -262,7 +264,7 @@
     }
 }
 
-/* menu repas selection */
+/* selection choix assiette */
 .selection{
     display: none;
     @media screen and (max-width: $tablet-iphone){

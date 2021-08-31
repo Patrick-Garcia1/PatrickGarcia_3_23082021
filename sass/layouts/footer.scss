@@ -1,9 +1,10 @@
-
+/* footer */
 .pied{
     height: 203px;
     margin-top: 30px;
     color: $couleur-encre-sec;
     background-color: $couleur-footer;
+    /* titre footer */
     &__titre{
         margin: 0;
         padding: 20px 0 10px 0;
@@ -11,7 +12,7 @@
         text-indent: 7%;
         font-size: 1.15rem;
         font-family: 'Shrikhand', cursive;
-    }
+    } /* ensemble de li */
     &__liste{
         max-width: 300px;
         display: flex;
@@ -21,7 +22,7 @@
         @media screen and (min-width: $desktop){
             max-width: unset;
             margin: 20px 0 0 0%;
-        }
+        } /* li */
         &--element{
             padding: 0;
             margin: 0 25% 0 0; 
@@ -38,7 +39,7 @@
             }
         }
     }
-}
+} /* zone cliquable de texte */
 .lien{
     display: block;
     margin:0;
