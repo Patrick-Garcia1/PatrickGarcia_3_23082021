@@ -36,6 +36,7 @@
 }
 
 /* box-shadow */
+/* corp de la page */
 body {
   padding: 0;
   margin: 0;
@@ -44,6 +45,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* selection texte */
 ::selection {
   background-color: unset;
   color: unset;
@@ -908,6 +910,9 @@ body {
   }
 }
 /* bouton moteur de recherche avec activation animation */
+.recherche {
+  /* icone localisation détourné pour animation */
+}
 .recherche--bouton {
   height: 50px;
   width: 220px;
@@ -962,10 +967,13 @@ body {
   box-shadow: 0px 5px 10px 0px #8e8e8e;
 }
 
+/* header */
 .tête {
   height: 62px;
   position: relative;
   background: #FFF;
+  /* nom du site */
+  /* zone flèche */
 }
 .tête:hover .tête__titre {
   animation: zoop 4s linear infinite;
@@ -985,6 +993,8 @@ body {
   left: 2%;
   color: #000;
   text-decoration: none;
+  /* icone flèche */
+  /* element d'animation fleche */
 }
 .tête__flèche:visited {
   color: #000;
@@ -1027,6 +1037,7 @@ body {
 /* bandeau des pages menu */
 .bandeau {
   position: relative;
+  /* zone en dessous de l'image */
 }
 .bandeau__image {
   width: 100%;
@@ -1050,6 +1061,8 @@ body {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #FAFAFA;
+  /* nom de la table (restaurant) */
+  /* coeur et effet/animation */
 }
 .bandeau__texte:hover .bandeau__texte__titre {
   animation: boubou 1.2s ease-in forwards;
@@ -1110,6 +1123,9 @@ body {
   margin: 0px auto;
   text-align: center;
   background-color: #FAFAFA;
+  /* placeholder */
+  /* titre du formulaire */
+  /* texte pub formulaire */
 }
 @media screen and (min-width: 620px) {
   .recherche {
@@ -1150,6 +1166,10 @@ body {
   padding: 0;
   background-color: #FAFAFA;
   animation: flou 2s linear 0s forwards;
+  /* titre des zones de repas */
+  /* zone des entrées */
+  /* zone des plats */
+  /* zone des desserts */
 }
 .repas__titre {
   height: 30px;
@@ -1162,6 +1182,7 @@ body {
   font-size: 0.95rem;
   font-weight: 400;
   text-transform: uppercase;
+  /* barre sous les titres */
 }
 @media screen and (min-width: 1024px) {
   .repas__titre {
@@ -1202,6 +1223,8 @@ body {
   padding: 5px 0 0 0;
   opacity: 0;
   animation: flou 1.3s linear forwards;
+  /* zone pour 4 choix */
+  /* type d'entrée */
 }
 @media screen and (min-width: 1024px) {
   .repas__entrée {
@@ -1240,6 +1263,7 @@ body {
   padding: 5px 0 0 0;
   opacity: 0;
   animation: flou 1.3s linear forwards;
+  /* type de plat */
 }
 @media screen and (min-width: 1024px) {
   .repas__plat {
@@ -1266,6 +1290,7 @@ body {
   padding: 5px 0 0 0;
   opacity: 0;
   animation: flou 1.3s linear forwards;
+  /* type des desserts */
 }
 @media screen and (min-width: 1024px) {
   .repas__dessert {
@@ -1287,7 +1312,7 @@ body {
   animation: colle 1.5s ease-in-out 0.2s forwards;
 }
 
-/* menu repas assiette */
+/* zone chaque assiette */
 .assiette {
   width: 93vw;
   height: 68px;
@@ -1298,6 +1323,9 @@ body {
   box-shadow: 0px 5px 10px 0px #b4b4b4;
   background-color: #FFF;
   overflow: hidden;
+  /* nom de l'assiette */
+  /* prix de l'assiette */
+  /* zone validation choix assiette */
 }
 .assiette--un {
   opacity: 0;
@@ -1322,6 +1350,7 @@ body {
   justify-content: flex-start;
   text-indent: 10px;
   flex: 1;
+  /* texte accompagnant du menu */
 }
 .assiette__texte__menu {
   width: 100%;
@@ -1377,7 +1406,7 @@ body {
   transform: scaleX(1);
 }
 
-/* menu repas selection */
+/* selection choix assiette */
 .selection {
   display: none;
 }
@@ -1416,6 +1445,8 @@ body {
 .fonctionnement {
   height: 440px;
   background: #FFF;
+  /* titre de fonctionnement */
+  /* zone des 'boutons' */
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement {
@@ -1433,6 +1464,7 @@ body {
   flex-flow: row wrap;
 }
 
+/* boutons */
 .bouton {
   width: 87%;
   height: 75px;
@@ -1448,6 +1480,9 @@ body {
   text-align: start;
   color: #000;
   font-family: "Roboto", sans-serif;
+  /* zone numero de bouton */
+  /* icone de bouton */
+  /* icone de bouton violet */
 }
 @media screen and (min-width: 1024px) {
   .bouton {
@@ -1521,6 +1556,8 @@ body {
 .restaurants {
   height: 1190px;
   background-color: #FAFAFA;
+  /* titre de la zone de navigation des restaurants */
+  /* élément de navigation */
 }
 @media screen and (min-width: 1024px) {
   .restaurants {
@@ -1546,6 +1583,7 @@ body {
   }
 }
 
+/* carte de restaurant */
 .carte {
   height: 250px;
   width: 87%;
@@ -1555,6 +1593,7 @@ body {
   color: #000;
   background: #FFF;
   box-shadow: 0px 5px 10px 0px #b4b4b4;
+  /* zone de lien */
 }
 @media screen and (min-width: 1024px) {
   .carte {
@@ -1567,8 +1606,19 @@ body {
   }
 }
 .carte__lien {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
   background: #FFF;
   text-decoration: none;
+  /* pancarte de nouveauté */
+  /* image du restaurant */
+  /* nom du restaurant */
+  /* lieu du restaurant */
+  /* zone coeur et interaction */
 }
 .carte__lien:link {
   color: #000;
@@ -1650,6 +1700,8 @@ body {
   position: absolute;
   right: 10px;
   bottom: 20px;
+  /* coeur vide */
+  /* zone apparition du coeur plein */
 }
 .coeur:hover {
   cursor: grab;
@@ -1662,6 +1714,7 @@ body {
   position: absolute;
   right: 0px;
   top: 0px;
+  /* coeur plein */
 }
 .coeur__filtre--plein {
   position: absolute;
@@ -1675,11 +1728,14 @@ body {
   -webkit-background-clip: text;
 }
 
+/* footer */
 .pied {
   height: 203px;
   margin-top: 30px;
   color: #FFF;
   background-color: #363636;
+  /* titre footer */
+  /* ensemble de li */
 }
 .pied__titre {
   margin: 0;
@@ -1695,6 +1751,7 @@ body {
   flex-flow: row wrap;
   margin: 0 0 0 7%;
   padding: 0;
+  /* li */
 }
 @media screen and (min-width: 1024px) {
   .pied__liste {
@@ -1720,6 +1777,7 @@ body {
   }
 }
 
+/* zone cliquable de texte */
 .lien {
   display: block;
   margin: 0;
@@ -1763,6 +1821,10 @@ body {
   border-radius: 50%;
   background: linear-gradient(#9356DC, #99E2D0, #FF79DA);
   animation: disparait 0.5s ease-in-out forwards 2.3s;
+  /* couches de blur */
+  /* ohmyfood */
+  /* couvert */
+  /* 5 points horizontaux */
 }
 .conteneur__loader--filtre {
   width: 100%;
@@ -1772,6 +1834,7 @@ body {
   border-radius: 50%;
   background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
   animation: animate 1.5s linear 2;
+  /* 3 satellites */
 }
 .conteneur__loader--filtre:nth-child(1) {
   filter: blur(0px);
@@ -1844,6 +1907,7 @@ body {
   -webkit-background-clip: text;
   font-size: 2.5rem;
   animation: couvert 2.5s linear forwards;
+  /* ombre couvert */
 }
 .conteneur__loader__icone::after {
   content: "";
@@ -1867,6 +1931,7 @@ body {
   z-index: 5;
 }
 
+/* 5 points horizontaux */
 .point {
   width: 36px;
   height: 36px;
