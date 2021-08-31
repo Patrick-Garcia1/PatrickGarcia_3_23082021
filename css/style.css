@@ -1392,18 +1392,18 @@ body {
   background-color: #c1ede2;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  transform: scaleX(0);
   transform-origin: 100% 50%;
   transition: all 0.4s linear;
 }
 .assiette--valide--icone {
+  position: absolute;
+  left: 20px;
   margin: 24px 0 24px 0;
   font-size: 1.25rem;
   color: #FFF;
 }
 .assiette:hover > .assiette--valide {
   min-width: 60px;
-  transform: scaleX(1);
 }
 
 /* selection choix assiette */
@@ -1414,17 +1414,14 @@ body {
   .selection:hover + .assiette .assiette--valide {
     min-width: 60px;
     background-color: #99E2D0;
-    transform: scaleX(1);
   }
   .selection:checked + .assiette .assiette--valide {
     min-width: 60px;
     background-color: #99E2D0;
-    transform: scaleX(1);
   }
   .selection:not(:checked) + .assiette .assiette--valide {
     min-width: 0px;
     background-color: #99E2D0;
-    transform: scaleX(0);
   }
   .selection:checked + .assiette .assiette--valide--icone {
     animation: tour 0.4s linear forwards;
@@ -1434,7 +1431,6 @@ body {
   .selection:checked + .assiette .assiette--valide {
     min-width: 60px;
     background-color: #99E2D0;
-    transform: scaleX(1);
   }
   .selection:not(:checked) + .assiette:hover .assiette--valide--icone {
     animation: tour 0.4s linear forwards;

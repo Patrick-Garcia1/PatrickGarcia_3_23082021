@@ -249,10 +249,11 @@
         background-color: lighten($couleur-tertiaire, 10%);
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        transform: scaleX(0);
         transform-origin: 100% 50%;
         transition: all 0.4s linear;
         &--icone{
+            position: absolute;
+            left: 20px;
             margin: 24px 0 24px 0;
             font-size: 1.25rem;
             color: $couleur-encre-sec;
@@ -260,7 +261,6 @@
     }
     &:hover > .assiette--valide{
         min-width: 60px;
-        transform: scaleX(1); 
     }
 }
 
@@ -270,18 +270,15 @@
     @media screen and (max-width: $tablet-iphone){
         &:hover + .assiette .assiette--valide{
             min-width: 60px;
-            background-color: $couleur-tertiaire;
-            transform: scaleX(1); 
+            background-color: $couleur-tertiaire; 
         }
         &:checked + .assiette .assiette--valide{
             min-width: 60px;
             background-color: $couleur-tertiaire;
-            transform: scaleX(1); 
         }
         &:not(:checked) + .assiette .assiette--valide{
             min-width: 0px;
             background-color: $couleur-tertiaire;
-            transform: scaleX(0); 
         }
         &:checked + .assiette .assiette--valide--icone{
             animation: tour 0.4s linear forwards;
@@ -291,7 +288,6 @@
         &:checked + .assiette .assiette--valide{
             min-width: 60px;
             background-color: $couleur-tertiaire;
-            transform: scaleX(1); 
         }
         &:not(:checked) + .assiette:hover .assiette--valide--icone{
             animation: tour 0.4s linear forwards;
