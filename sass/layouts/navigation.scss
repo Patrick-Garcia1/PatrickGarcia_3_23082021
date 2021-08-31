@@ -1,7 +1,7 @@
 /* fonctionnement */
 .fonctionnement{
     height: 440px;
-    background: $couleur-quatre;
+    background: $coul-bg;
     @media screen and (min-width: $desktop){
         height: 280px;
     }
@@ -24,7 +24,7 @@
     padding: 0;
     border: none;
     border-radius: 20px;
-    @include shadow;
+    @include shadow-ok;
     background-color: $couleur-bg;  
     font-size: $size-un;
     font-weight: 500;
@@ -46,7 +46,7 @@
         background-color: $couleur-primaire;
         border: 1px solid $couleur-primaire;
         border-radius: 22px;
-        color: $couleur-quatre;
+        color: $couleur-encre-sec;
     }
     &:hover .bouton--numero{
         animation: tourne 1.5s linear forwards;
@@ -88,7 +88,7 @@
         left: 0;
         z-index: -1;
         background-color: $couleur-primaire;
-        @include shadow;
+        @include shadow-ok;
         border-radius: 20px;
         opacity: 0;
     }
@@ -129,8 +129,8 @@
     position: relative;
     border-radius: 20px;
     color: $couleur-encre;
-    background: $couleur-quatre;
-    @include shadow;
+    background: $coul-bg;
+    @include shadow-ok;
     @media screen and (min-width: $desktop){
         width: 45%;
     }
@@ -140,7 +140,7 @@
         } 
     }
     &__lien{
-        background: $couleur-quatre;
+        background: $coul-bg;
         text-decoration: none;
         &:link{
             color: $couleur-encre;

@@ -61,17 +61,17 @@
                 &:nth-child(1){
                     top: 175px;
                     right: 16px;
-                    background: radial-gradient($couleur-primaire 50%, $couleur-quatre 0%);
+                    background: radial-gradient($couleur-primaire 50%, $couleur-load 0%);
                 }
                 &:nth-child(2){
                     left: 115px;
                     bottom: 227px;
-                    background: radial-gradient($couleur-tertiaire 50%, $couleur-quatre 0%);
+                    background: radial-gradient($couleur-tertiaire 50%, $couleur-load 0%);
                 }
                 &:nth-child(3){
                     top: 175px;
                     left: 16px;
-                    background: radial-gradient($couleur-secondaire 50%, $couleur-quatre 0%);
+                    background: radial-gradient($couleur-secondaire 50%, $couleur-load 0%);
                 }
             }
         }
@@ -130,23 +130,23 @@
     filter: blur(2px);
     transform: scale(0.1);
     &:nth-child(1){  
-        background: radial-gradient($couleur-primaire 50%, $couleur-quatre 0%);
+        background: radial-gradient($couleur-primaire 50%, $couleur-load 0%);
         animation: point 0.8s linear 0s 3;  
     }
     &:nth-child(2){
-        background: radial-gradient($couleur-tertiaire 50%, $couleur-quatre 0%);
+        background: radial-gradient($couleur-tertiaire 50%, $couleur-load 0%);
         animation: point 0.8s linear 0.1s 3;  
     }
     &:nth-child(3){
-        background: radial-gradient($couleur-secondaire 50%, $couleur-quatre 0%);
+        background: radial-gradient($couleur-secondaire 50%, $couleur-load 0%);
         animation: point 0.8s linear 0.2s 3;  
     }
     &:nth-child(4){
-        background: radial-gradient($couleur-tertiaire 50%, $couleur-quatre 0%);
+        background: radial-gradient($couleur-tertiaire 50%, $couleur-load 0%);
         animation: point 0.8s linear 0.3s 3;  
     }
     &:nth-child(5){
-        background: radial-gradient($couleur-primaire 50%, $couleur-quatre 0%);
+        background: radial-gradient($couleur-primaire 50%, $couleur-load 0%);
         animation: point 0.8s linear 0.4s 3;  
     }
 } 

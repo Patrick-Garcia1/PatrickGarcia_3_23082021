@@ -1,7 +1,7 @@
 .tête{
     height: 62px;
     position: relative;
-    background: $couleur-quatre;
+    background: $coul-bg;
     &:hover .tête__titre{
         animation: zoop 4s linear infinite;
     }

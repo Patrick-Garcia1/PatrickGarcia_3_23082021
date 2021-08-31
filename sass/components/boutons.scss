@@ -11,7 +11,7 @@
         font-weight: 500;
         @include shadow;
         background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
-        color: $couleur-quatre; 
+        color: $couleur-encre-sec; 
         &:hover{  
             @extend %bouton;
             box-shadow: 0px 5px 10px 0px darken($ombre, 15%); 
@@ -50,7 +50,7 @@
         font-family: 'Roboto', sans-serif;
         @include shadow;
         background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
-        color: $couleur-quatre;
+        color: $couleur-encre-sec;
         &:hover{  
             @extend %bouton;
             box-shadow: 0px 5px 10px 0px darken($ombre, 15%); 

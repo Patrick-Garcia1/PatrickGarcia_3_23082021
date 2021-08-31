@@ -181,8 +181,8 @@
     display: flex;
     justify-content:stretch; /* start/center décale la div validé */
     border-radius: 20px;
-    @include shadow;
-    background-color: $couleur-quatre;
+    @include shadow-ok;
+    background-color: $coul-bg;
     overflow: hidden; 
     &--un{
         opacity: 0;
@@ -253,7 +253,7 @@
         &--icone{
             margin: 24px 0 24px 0;
             font-size: 1.25rem;
-            color: $couleur-quatre;
+            color: $couleur-encre-sec;
         }
     }
     &:hover > .assiette--valide{
