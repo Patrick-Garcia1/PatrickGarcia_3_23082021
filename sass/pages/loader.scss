@@ -8,9 +8,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
     background: black;
     animation: loader 2.8s linear forwards; 
+    &__projecteur{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        background: black;
+        font-family: 'Shrikhand', cursive;
+        color: white;
+        font-size: 1.3rem;
+        animation: disparait 0.5s ease-in-out forwards 2.3s; 
+        &--couche{
+            position: absolute;
+            &:nth-child(1){
+                top: 20px;  
+            }
+            &:nth-child(2){
+                height: 200px;
+                width: 630px;
+                top: -65px;
+                border-radius: 50%;
+                background: radial-gradient(closest-side, transparent, black 20%);
+                transform: translateX(-220px);
+                animation: projo 1.8s linear;
+            }
+            &:nth-child(3){
+                padding: 0 2px 0 2px;
+                top: 20px;
+                background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                z-index: -1;
+                animation: flash 0.1s linear 2s forwards; 
+            }
+        }
+    } 
     &__loader{
         width: 230px;
         height: 230px;
@@ -23,7 +61,7 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            z-index: 3;
+            z-index: 2;
             border-radius: 50%;
             background: linear-gradient(135deg, $couleur-primaire, $couleur-tertiaire, $couleur-secondaire);
             animation: animate 1.5s linear 2;
@@ -81,7 +119,7 @@
             position: absolute;
             top: 95px;
             left: 23px;
-            z-index: 4;
+            z-index: 3;
             padding-right: 2px;
             background: linear-gradient(135deg, $couleur-primaire, $couleur-tertiaire, $couleur-secondaire);
             font-family: 'Shrikhand', cursive;
@@ -93,7 +131,7 @@
             position: absolute;
             left: 98.75px;
             top: 40px;
-            z-index: 5;
+            z-index: 4;
             background: linear-gradient(135deg, $couleur-primaire, $couleur-tertiaire, $couleur-secondaire);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
@@ -120,7 +158,7 @@
             position: absolute;
             top: 130px;
             left: 25px;
-            z-index: 5;
+            z-index: 4;
         }
     }
 } 
