@@ -10,45 +10,7 @@
     align-items: center;
     z-index: 1;
     background: black;
-    animation: loader 2.8s linear forwards; 
-    &__projecteur{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0; 
-        right: 0;
-        background: black;
-        font-family: 'Shrikhand', cursive;
-        color: white;
-        font-size: 1.3rem;
-        animation: disparait 0.5s ease-in-out forwards 2.3s; 
-        &--couche{
-            position: absolute;
-            &:nth-child(1){
-                top: 20px;  
-            }
-            &:nth-child(2){
-                height: 200px;
-                width: 630px;
-                top: -65px;
-                border-radius: 50%;
-                background: radial-gradient(closest-side, transparent, black 20%);
-                transform: translateX(-220px);
-                animation: projo 1.8s linear;
-            }
-            &:nth-child(3){
-                padding: 0 2px 0 2px;
-                top: 20px;
-                background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                z-index: -1;
-                animation: flash 0.1s linear 2s forwards; 
-            }
-        }
-    } 
+    animation: loader 2.8s linear forwards;   
     &__loader{
         width: 230px;
         height: 230px;
@@ -115,17 +77,47 @@
             }
         } /* ohmyfood */
         &__texte{
-            height: 50px;
+            height: 40px;
             position: absolute;
             top: 95px;
-            left: 23px;
+            left: 33px;
             z-index: 3;
             padding-right: 2px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 0px;
             background: linear-gradient(135deg, $couleur-primaire, $couleur-tertiaire, $couleur-secondaire);
             font-family: 'Shrikhand', cursive;
-            font-size: 2.1rem;
+            font-size: 1.9rem;
             -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;      
+            -webkit-background-clip: text; 
+            overflow: hidden;
+            &--proj{
+                position: absolute;
+                height: 200px;
+                width: 630px;
+                top: -77px;
+                left: 0px;
+                border-radius: 50%;
+                background: radial-gradient(closest-side, transparent, black 20%);
+                transform: translateX(-220px);
+                animation: projo 1.8s linear forwards;
+            }     
+            &--texte{
+                height: 40px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                padding-right: 2px;
+                z-index: -1;
+                background: linear-gradient(135deg, $couleur-primaire, $couleur-tertiaire, $couleur-secondaire);
+                font-family: 'Shrikhand', cursive;
+                font-size: 1.9rem;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text; 
+                animation: flash 0.1s linear 2s forwards; 
+            }
         } /* couvert */
         &__icone{
             position: absolute;

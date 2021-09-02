@@ -60,25 +60,25 @@ body {
 /* loader */
 @keyframes projo {
   0% {
-    transform: translateX(-220px);
+    transform: translateX(-380px);
   }
   50% {
-    transform: translateX(70px);
+    transform: translateX(-90px);
   }
   55% {
-    transform: translateX(80px);
+    transform: translateX(-80px);
   }
   75% {
-    transform: translateX(-20px);
+    transform: translateX(-270px);
   }
   80% {
-    transform: translateX(-30px);
+    transform: translateX(-280px);
   }
   90% {
-    transform: translateX(10px);
+    transform: translateX(-210px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(-240px);
   }
 }
 @keyframes flash {
@@ -1838,44 +1838,6 @@ body {
   background: black;
   animation: loader 2.8s linear forwards;
 }
-.conteneur__projecteur {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: black;
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-size: 1.3rem;
-  animation: disparait 0.5s ease-in-out forwards 2.3s;
-}
-.conteneur__projecteur--couche {
-  position: absolute;
-}
-.conteneur__projecteur--couche:nth-child(1) {
-  top: 20px;
-}
-.conteneur__projecteur--couche:nth-child(2) {
-  height: 200px;
-  width: 630px;
-  top: -65px;
-  border-radius: 50%;
-  background: radial-gradient(closest-side, transparent, black 20%);
-  transform: translateX(-220px);
-  animation: projo 1.8s linear;
-}
-.conteneur__projecteur--couche:nth-child(3) {
-  padding: 0 2px 0 2px;
-  top: 20px;
-  background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  z-index: -1;
-  animation: flash 0.1s linear 2s forwards;
-}
 .conteneur__loader {
   width: 230px;
   height: 230px;
@@ -1947,17 +1909,47 @@ body {
   background: radial-gradient(#FF79DA 50%, #FFF 0%);
 }
 .conteneur__loader__texte {
-  height: 50px;
+  height: 40px;
   position: absolute;
   top: 95px;
-  left: 23px;
+  left: 33px;
   z-index: 3;
   padding-right: 2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 0px;
   background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
   font-family: "Shrikhand", cursive;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  overflow: hidden;
+}
+.conteneur__loader__texte--proj {
+  position: absolute;
+  height: 200px;
+  width: 630px;
+  top: -77px;
+  left: 0px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, transparent, black 20%);
+  transform: translateX(-220px);
+  animation: projo 1.8s linear forwards;
+}
+.conteneur__loader__texte--texte {
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-right: 2px;
+  z-index: -1;
+  background: linear-gradient(135deg, #9356DC, #99E2D0, #FF79DA);
+  font-family: "Shrikhand", cursive;
+  font-size: 1.9rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: flash 0.1s linear 2s forwards;
 }
 .conteneur__loader__icone {
   position: absolute;
