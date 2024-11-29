@@ -965,8 +965,7 @@ body {
   animation: fleche-tension 0.5s linear 1.35s 1 forwards;
 }
 .recherche__archer {
-  width: 24px;
-  /*  largeur pour la fin d'animation fleche-tension, que i ne sorte pas de sa boite */
+  width: 24px; /*  largeur pour la fin d'animation fleche-tension, que i ne sorte pas de sa boite */
   position: absolute;
   left: 22vw;
   top: 15px;
@@ -1058,10 +1057,8 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
-  background-position: left;
-  /* pour version bg-size */
-  transform-origin: 100% 50%;
-  /* pour version scale */
+  background-position: left; /* pour version bg-size */
+  transform-origin: 100% 50%; /* pour version scale */
 }
 @media screen and (min-width: 1024px) {
   .tête__flèche:hover .tête__flèche--plein {
@@ -1177,7 +1174,7 @@ body {
   font-size: 0.95rem;
   font-weight: 600;
   box-shadow: inset 0px 2px 3px #b4b4b4;
-  background-color: #e7e7e7;
+  background-color: rgb(231, 231, 231);
   color: #000;
   text-align: center;
 }
@@ -1353,8 +1350,7 @@ body {
   width: 93vw;
   height: 68px;
   display: flex;
-  justify-content: stretch;
-  /* start/center décale la div validé */
+  justify-content: stretch; /* start/center décale la div validé */
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px #b4b4b4;
   background-color: #FFF;
@@ -1423,8 +1419,7 @@ body {
   flex: 0;
   justify-content: center;
   position: relative;
-  left: 1px;
-  /* évite un escalier de l'animation */
+  left: 1px; /* évite un escalier de l'animation */
   background-color: #c1ede2;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
