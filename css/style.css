@@ -87,7 +87,7 @@ body {
   }
 }
 @keyframes loader {
-  99.99% {
+  0%,99.99% {
     height: 100%;
     width: 100%;
   }
